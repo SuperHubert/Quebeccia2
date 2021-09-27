@@ -21,13 +21,27 @@ public class PlayerShoot : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (isPlayer1)
         {
-            if (cooldown <= 0)
+            if (Input.GetAxis("LT Controller 1") != 0 || Input.GetAxis("RT Controller 1") != 0)
             {
-                ShootBullet();
+                if (cooldown <= 0)
+                {
+                    ShootBullet();
+                }
             }
         }
+        else
+        {
+            if (Input.GetAxis("LT Controller 2") != 0 || Input.GetAxis("RT Controller 2") != 0)
+            {
+                if (cooldown <= 0)
+                {
+                    ShootBullet();
+                }
+            }
+        }
+        
     }
 
     void ShootBullet()

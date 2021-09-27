@@ -14,6 +14,6 @@ public class DebugController : MonoBehaviour
     void Update()
     {
         Debug.Log("Controller 2 :"+Input.GetAxis("Vertical Controller 2"));
-        Debug.Log("Controller 1 :"+Input.GetAxis("Vertical Controller 1"));
+        Debug.Log("Controller 1 :"+Input.GetAxis("RT Controller 1"));
     }
 }

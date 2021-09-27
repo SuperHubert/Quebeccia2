@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
     {
         player1rb.MovePosition(player1rb.position + Vector2.down * speed * Time.deltaTime * player1Axis);
         player2rb.MovePosition(player2rb.position + Vector2.down * speed * Time.deltaTime * player2Axis);
+        
         //player1Object.localPosition += Vector3.down * speed * Time.deltaTime * player1Axis;
         //player2Object.localPosition += Vector3.down * speed * Time.deltaTime * player2Axis;
         
