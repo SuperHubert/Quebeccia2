@@ -660,6 +660,7 @@ GameObject:
   - component: {fileID: 775756067}
   - component: {fileID: 775756070}
   - component: {fileID: 775756066}
+  - component: {fileID: 775756071}
   m_Layer: 6
   m_Name: Player 1
   m_TagString: Untagged
@@ -772,6 +773,27 @@ MonoBehaviour:
   cooldown: 50
   isPlayer1: 1
   bulletSpeed: 10
+--- !u!50 &775756071
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775756065}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 5
 --- !u!1 &869429528
 GameObject:
   m_ObjectHideFlags: 0
@@ -1539,6 +1561,7 @@ GameObject:
   - component: {fileID: 1827636856}
   - component: {fileID: 1827636859}
   - component: {fileID: 1827636855}
+  - component: {fileID: 1827636860}
   m_Layer: 7
   m_Name: Player 2
   m_TagString: Untagged
@@ -1651,6 +1674,27 @@ MonoBehaviour:
   cooldown: 4
   isPlayer1: 0
   bulletSpeed: 10
+--- !u!50 &1827636860
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827636854}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 5
 --- !u!1001 &1905041938
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         player1Object.localPosition += Vector3.down * speed * Time.deltaTime * player1Axis;
+        
         player2Object.localPosition += Vector3.down * speed * Time.deltaTime * player2Axis;
         
         /*
