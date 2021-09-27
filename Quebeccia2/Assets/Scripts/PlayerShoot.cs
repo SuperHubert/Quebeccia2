@@ -1,29 +1,34 @@
+using System;
 using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
     public GameObject bulletPrefab;
-    [SerializeField] private int cooldown = 50;
+    [SerializeField] private int cooldown = 4;
 
-    void Update()
+    private void FixedUpdate()
     {
         if (cooldown > 0)
         {
             cooldown--;
         }
+
+    }
+
+    void Update()
+    {
         if (Input.GetKey(KeyCode.Mouse0))
         {
             if (cooldown <= 0)
             {
                 ShootBullet();
             }
-            
         }
     }
 
     void ShootBullet()
     {
         Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-        cooldown = 50;
+        cooldown = 4;
     }
 }
