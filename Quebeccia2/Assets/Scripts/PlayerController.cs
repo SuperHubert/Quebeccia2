@@ -7,11 +7,8 @@ public class PlayerController : MonoBehaviour
 {
     public Transform playerObject;
     public float maxHeight = 4.75f;
-    public float minHeight = -4.75f;
     public bool up;
     public bool down;
-    public bool right;
-    public bool left;
 
     [Range(0,100)]
     public float speed = 1;
@@ -43,7 +40,7 @@ public class PlayerController : MonoBehaviour
         }
         if (down)
         {
-            if (playerObject.transform.position.y + speed * Time.deltaTime > minHeight)
+            if (playerObject.transform.position.y + speed * Time.deltaTime > -maxHeight)
             {
                 playerObject.transform.position =
                     new Vector3(playerObject.transform.position.x,
