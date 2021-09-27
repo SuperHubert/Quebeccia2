@@ -5,6 +5,10 @@ public class PlayerShoot : MonoBehaviour
 {
     public GameObject bulletPrefab;
     [SerializeField] private int cooldown = 4;
+    public bool isPlayer1;
+
+    [SerializeField] float bulletSpeed = 10f;
+    private GameObject bullet;
 
     private void FixedUpdate()
     {
@@ -28,7 +32,18 @@ public class PlayerShoot : MonoBehaviour
 
     void ShootBullet()
     {
-        Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        if (isPlayer1)
+        {
+            bullet.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed;
+            bullet.layer = 8;
+        }
+        else
+        {
+            bullet.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed * -1;
+            bullet.layer = 9;
+        }
+        
         cooldown = 4;
     }
 }
