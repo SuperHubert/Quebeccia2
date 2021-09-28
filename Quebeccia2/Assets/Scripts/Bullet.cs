@@ -5,12 +5,19 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    void Start()
-    {
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(gameObject);
+        Enemy enemy = other.GetComponent<Enemy>();
+        if (enemy != null)
+        {
+            enemy.currentHp--;
+            if (enemy.currentHp <= 0)
+            {
+                Destroy(enemy.gameObject);
+            }
+        }
+
+
     }
 }

@@ -8,11 +8,15 @@ public class EnemyScriptableObject : ScriptableObject
     public bool asPattern;
     public Animation anim;
     public Vector2 targetPos;
+    public float moveSpeed;
 
     public int maxHp;
     public int damageOnCollision;
+    
+    public bool canShoot;
+    public GameObject bullet;
     public int damageOnBullet;
-    public float fireRate;
+    public int fireRate;
     public float fireSpeed;
 
     public void SetTargetPos(Vector2 newTargetPos)

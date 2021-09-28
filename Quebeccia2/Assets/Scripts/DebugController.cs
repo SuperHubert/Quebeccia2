@@ -13,7 +13,7 @@ public class DebugController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Controller 2 :"+Input.GetAxis("Vertical Controller 2"));
+        //Debug.Log("Controller 2 :"+Input.GetAxis("Vertical Controller 2"));
         Debug.Log("Controller 1 :"+Input.GetAxis("RT Controller 1"));
     }
 }

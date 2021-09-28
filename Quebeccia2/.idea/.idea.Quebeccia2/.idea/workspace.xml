@@ -11,6 +11,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DebugController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/EnemyScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -59,7 +60,7 @@
       <updated>1632736071068</updated>
       <workItem from="1632736091448" duration="795000" />
       <workItem from="1632738752853" duration="6931000" />
-      <workItem from="1632816375329" duration="2512000" />
+      <workItem from="1632816375329" duration="9014000" />
     </task>
     <servers />
   </component>
