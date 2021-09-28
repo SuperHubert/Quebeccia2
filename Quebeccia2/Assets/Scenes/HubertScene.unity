@@ -375,6 +375,7 @@ GameObject:
   - component: {fileID: 775756070}
   - component: {fileID: 775756066}
   - component: {fileID: 775756071}
+  - component: {fileID: 775756072}
   m_Layer: 6
   m_Name: Player 1
   m_TagString: Untagged
@@ -508,6 +509,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 5
+--- !u!114 &775756072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775756065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f585527b25db96141998922c08b19307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHp: 6
+  currentHp: 0
+  canTakeDamage: 1
 --- !u!1 &900967348
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,19 +582,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1737808956826125544, guid: 639226b486c415447bd79951d2f44d9a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9998423
+      value: 0.9237557
       objectReference: {fileID: 0}
     - target: {fileID: 1737808956826125544, guid: 639226b486c415447bd79951d2f44d9a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.0032750268
+      value: -0.009701603
       objectReference: {fileID: 0}
     - target: {fileID: 1737808956826125544, guid: 639226b486c415447bd79951d2f44d9a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.01745479
+      value: -0.0148717575
       objectReference: {fileID: 0}
     - target: {fileID: 1737808956826125544, guid: 639226b486c415447bd79951d2f44d9a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000057173926
+      value: 0.3825703
       objectReference: {fileID: 0}
     - target: {fileID: 1737808956826125544, guid: 639226b486c415447bd79951d2f44d9a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -590,7 +606,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1737808956826125544, guid: 639226b486c415447bd79951d2f44d9a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 3252539563858903593, guid: 639226b486c415447bd79951d2f44d9a, type: 3}
       propertyPath: bulletPrefab
@@ -870,6 +886,7 @@ GameObject:
   - component: {fileID: 1827636859}
   - component: {fileID: 1827636855}
   - component: {fileID: 1827636860}
+  - component: {fileID: 1827636861}
   m_Layer: 7
   m_Name: Player 2
   m_TagString: Untagged
@@ -1003,6 +1020,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 5
+--- !u!114 &1827636861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827636854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f585527b25db96141998922c08b19307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHp: 6
+  currentHp: 0
+  canTakeDamage: 1
 --- !u!1001 &2085459640
 PrefabInstance:
   m_ObjectHideFlags: 0
