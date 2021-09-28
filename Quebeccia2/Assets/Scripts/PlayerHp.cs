@@ -18,12 +18,7 @@ public class PlayerHp : MonoBehaviour
     {
         currentHp = startingHp;
     }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        
-    }
-
+    
     public void TakeDamage(int damage)
     {
         if (canTakeDamage)
