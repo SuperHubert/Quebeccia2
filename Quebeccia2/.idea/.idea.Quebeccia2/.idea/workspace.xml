@@ -15,6 +15,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DebugController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/EnemyScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerHp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BulletPool.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1yiYozjMNwOwhs9hDyYOsItHdgG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -62,7 +63,7 @@
       <updated>1632736071068</updated>
       <workItem from="1632736091448" duration="795000" />
       <workItem from="1632738752853" duration="6931000" />
-      <workItem from="1632816375329" duration="11356000" />
+      <workItem from="1632816375329" duration="12204000" />
     </task>
     <servers />
   </component>
