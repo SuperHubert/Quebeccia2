@@ -16,6 +16,7 @@ public class Bullet : MonoBehaviour
             if (enemy.currentHp <= 0)
             {
                 Destroy(enemy.gameObject);
+                gameObject.SetActive(false);
             }
         }
         else
@@ -26,7 +27,7 @@ public class Bullet : MonoBehaviour
                 playerHp.currentHp--;
                 if (playerHp.currentHp <= 0)
                 {
-                    Debug.Log("Game Over");
+                    Debug.Log("Game Over"); 
                 }
             }
         }
