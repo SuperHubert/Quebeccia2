@@ -8,8 +8,14 @@ public class PlayerShoot : MonoBehaviour
     public bool isPlayer1;
 
     [SerializeField] float bulletSpeed = 10f;
+    private BulletPool bulletPool;
     private GameObject bullet;
-
+    
+    private void Start()
+    {
+        bulletPool = BulletPool.Instance;
+    }
+    
     void Update()
     {
         if (cooldown > 0)
@@ -29,7 +35,8 @@ public class PlayerShoot : MonoBehaviour
         }
         else
         {
-            if (Input.GetAxis("LT Controller 2") != 0 || Input.GetAxis("RT Controller 2") != 0)
+            //if (Input.GetAxis("LT Controller 2") != 0 || Input.GetAxis("RT Controller 2") != 0)
+            if(Input.GetKey(KeyCode.A))
             {
                 if (cooldown <= 0)
                 {
@@ -47,13 +54,11 @@ public class PlayerShoot : MonoBehaviour
         {
             bullet.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed;
             bullet.layer = 8;
-            Destroy(bullet,5);
         }
         else
         {
             bullet.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed * -1;
             bullet.layer = 9;
-            Destroy(bullet,5);
         }
         
         cooldown = 4;
