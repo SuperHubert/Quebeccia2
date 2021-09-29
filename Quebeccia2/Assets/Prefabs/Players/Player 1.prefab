@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 5391833174623229346}
   - component: {fileID: 5391833174623229347}
   - component: {fileID: 5391833174623229350}
-  - component: {fileID: 1719750736205983489}
   - component: {fileID: 5391833174623229351}
   - component: {fileID: 5391833174623229353}
   - component: {fileID: 5391833174623229352}
+  - component: {fileID: 5009396886228087355}
   m_Layer: 6
   m_Name: Player 1
   m_TagString: Untagged
@@ -134,22 +134,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 5
---- !u!111 &1719750736205983489
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5391833174623229344}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: e4d3c65f074d6cd4aa8d6e39b4a98860, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: e4d3c65f074d6cd4aa8d6e39b4a98860, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &5391833174623229351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,3 +195,22 @@ MonoBehaviour:
   DroneXCDImage: {fileID: 0}
   YCDImage: {fileID: 0}
   BXCDImage: {fileID: 0}
+--- !u!95 &5009396886228087355
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5391833174623229344}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4dc46aca4b7b9be44979bd0086823303, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
