@@ -25,7 +25,7 @@ public class PlayerShoot : MonoBehaviour
         
         if (isPlayer1)
         {
-            if (Input.GetAxis("LT Controller 1") != 0 || Input.GetAxis("RT Controller 1") != 0)
+            if (Input.GetAxis("LT Controller 1") != 0 || Input.GetAxis("RT Controller 1") != 0 || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.Q))
             {
                 if (cooldown <= 0)
                 {
@@ -35,8 +35,7 @@ public class PlayerShoot : MonoBehaviour
         }
         else
         {
-            //if (Input.GetAxis("LT Controller 2") != 0 || Input.GetAxis("RT Controller 2") != 0)
-            if(Input.GetKey(KeyCode.A))
+            if (Input.GetAxis("LT Controller 2") != 0 || Input.GetAxis("RT Controller 2") != 0 || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
             {
                 if (cooldown <= 0)
                 {
