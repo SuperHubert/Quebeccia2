@@ -9,11 +9,8 @@ public class WallHp : MonoBehaviour
     public float startingHp = 6;
     public float currentHp;
     public bool decay = false;
-
-    public Image lifeBar;
+    public float decaySpeed = 0.1f;
     
-    public Rigidbody2D rb;
-
     void Start()
     {
         if (decay)
@@ -24,7 +21,10 @@ public class WallHp : MonoBehaviour
 
     private void FixedUpdate()
     {
-        currentHp -= 0.1f;
+        if (decay)
+        {
+            currentHp -= decaySpeed;
+        }
     }
 
     public void TakeDamage(int damage)
