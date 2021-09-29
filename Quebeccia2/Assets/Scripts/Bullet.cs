@@ -10,7 +10,6 @@ public class Bullet : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
         Enemy enemy = other.GetComponent<Enemy>();
         PlayerHp playerHp = other.GetComponent<PlayerHp>();
         GlobalHp otherHp = other.GetComponent<GlobalHp>();
