@@ -1,23 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MenuManger : MonoBehaviour
 {
-    public Button startButton;
-    public Button quitButton;
-    public Button settingsButton;
 
-    // Start is called before the first frame update
-    void Start()
+    public void PlayGame()
     {
-        
+        SceneManager.LoadScene(1);
+        Debug.Log("Jouer");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void QuitGame()
     {
-        
+        Application.Quit();
+        Debug.Log("Quitter");
     }
+
+    public void OpenSettings()
+    {
+        SceneManager.LoadScene(2);
+        Debug.Log("Parametres");
+    }
+    
 }
