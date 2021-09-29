@@ -44,13 +44,15 @@ public class Enemy : MonoBehaviour
         }
     }
     
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage,int player)
     {
         currentHp -= damage;
         if (currentHp <= 0)
         {
             WaveManager.Instance.KilledOpponent(gameObject);
+            ScoreManager.Instance.AddScore(player,enemyInfo.scoreIncrease);
             Destroy(gameObject);
+            
         }
     }
         

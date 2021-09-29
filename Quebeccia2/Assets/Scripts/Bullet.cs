@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Bullet : MonoBehaviour
 {
-    public GameObject origin;
+    public int origin = 0;
     
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour
         }
         else if (enemy != null)
         {
-            enemy.TakeDamage(1);
+            enemy.TakeDamage(1,origin);
         }
         else if (otherHp != null)
         {

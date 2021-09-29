@@ -53,13 +53,13 @@ public class PlayerShoot : MonoBehaviour
         if (isPlayer1)
         {
             bullet.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed;
-            bullet.GetComponent<Bullet>().origin = gameObject;
+            bullet.GetComponent<Bullet>().origin = 1;
             bullet.layer = 8;
         }
         else
         {
             bullet.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed * -1;
-            bullet.GetComponent<Bullet>().origin = gameObject;
+            bullet.GetComponent<Bullet>().origin = 2;
             bullet.layer = 9;
         }
         
