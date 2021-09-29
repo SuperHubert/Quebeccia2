@@ -128,6 +128,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1737808956826125544, guid: 639226b486c415447bd79951d2f44d9a, type: 3}
   m_PrefabInstance: {fileID: 1322907936}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &344460921 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5009396886228087355, guid: 8b2115bb788911d4585e9a3f0609ac6f, type: 3}
+  m_PrefabInstance: {fileID: 5391833175262006401}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &363122471
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,11 +472,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5391833174623229348, guid: 8b2115bb788911d4585e9a3f0609ac6f, type: 3}
   m_PrefabInstance: {fileID: 5391833175262006401}
   m_PrefabAsset: {fileID: 0}
---- !u!111 &775756074 stripped
-Animation:
-  m_CorrespondingSourceObject: {fileID: 1719750736205983489, guid: 8b2115bb788911d4585e9a3f0609ac6f, type: 3}
-  m_PrefabInstance: {fileID: 5391833175262006401}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &894343571 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 755954027058502274, guid: 3889e144406c53e41b8a4be7a1cffec4, type: 3}
@@ -538,6 +538,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1122491912 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5992196274369611732, guid: 31be34db94c56a443821f365a87a72e5, type: 3}
+  m_PrefabInstance: {fileID: 4344330135629973831}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1152089376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1024,11 +1029,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4344330136109207357, guid: 31be34db94c56a443821f365a87a72e5, type: 3}
   m_PrefabInstance: {fileID: 4344330135629973831}
   m_PrefabAsset: {fileID: 0}
---- !u!111 &1827636863 stripped
-Animation:
-  m_CorrespondingSourceObject: {fileID: 4273895209590617113, guid: 31be34db94c56a443821f365a87a72e5, type: 3}
-  m_PrefabInstance: {fileID: 4344330135629973831}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1841976160
 GameObject:
   m_ObjectHideFlags: 0
@@ -1315,6 +1315,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4273895209590617113, guid: 31be34db94c56a443821f365a87a72e5, type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4273895209590617113, guid: 31be34db94c56a443821f365a87a72e5, type: 3}
+      propertyPath: m_Animations.Array.data[0]
+      value: 
+      objectReference: {fileID: 7400000, guid: e4d3c65f074d6cd4aa8d6e39b4a98860, type: 2}
     - target: {fileID: 4344330136109207345, guid: 31be34db94c56a443821f365a87a72e5, type: 3}
       propertyPath: m_Name
       value: Player 2
@@ -1338,7 +1346,7 @@ PrefabInstance:
     - target: {fileID: 4344330136109207354, guid: 31be34db94c56a443821f365a87a72e5, type: 3}
       propertyPath: anim
       value: 
-      objectReference: {fileID: 1827636863}
+      objectReference: {fileID: 1122491912}
     - target: {fileID: 4344330136109207354, guid: 31be34db94c56a443821f365a87a72e5, type: 3}
       propertyPath: lifeBar
       value: 
@@ -1387,6 +1395,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5992196274369611732, guid: 31be34db94c56a443821f365a87a72e5, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4dc46aca4b7b9be44979bd0086823303, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31be34db94c56a443821f365a87a72e5, type: 3}
 --- !u!1001 &5391833175262006401
@@ -1467,7 +1479,7 @@ PrefabInstance:
     - target: {fileID: 5391833174623229353, guid: 8b2115bb788911d4585e9a3f0609ac6f, type: 3}
       propertyPath: anim
       value: 
-      objectReference: {fileID: 775756074}
+      objectReference: {fileID: 344460921}
     - target: {fileID: 5391833174623229353, guid: 8b2115bb788911d4585e9a3f0609ac6f, type: 3}
       propertyPath: lifeBar
       value: 
