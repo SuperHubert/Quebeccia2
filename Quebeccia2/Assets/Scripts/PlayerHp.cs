@@ -24,6 +24,7 @@ public class PlayerHp : MonoBehaviour
         if (canTakeDamage)
         {
             currentHp -= damage;
+            StartCoroutine(InvulnerabilityFrames());
             if (currentHp <= 0)
             {
                 currentHp = 0;
@@ -33,4 +34,12 @@ public class PlayerHp : MonoBehaviour
         }
         
     }
+
+    IEnumerator InvulnerabilityFrames()
+    {
+        canTakeDamage = false;
+        yield return new WaitForSeconds(1);
+        canTakeDamage = true;
+    }
+
 }
