@@ -12,11 +12,17 @@ public class PowerCast : MonoBehaviour
     private GameObject castShield;
     private GameObject castDroneX;
     public int shieldCooldown = 0;
-    public int droneXCooldown = 0;
     public int shieldCooldownMax = 300;
+    public int droneXCooldown = 0;
     public int droneXCooldownMax = 300;
+    public int YCooldown = 0;
+    public int YdCooldownMax = 300;
+    public int BCooldown = 0;
+    public int BCooldownMax = 300;
     public Image shieldCDImage;
     public Image DroneXCDImage;
+    public Image YCDImage;
+    public Image BXCDImage;
 
     private void FixedUpdate()
     {
