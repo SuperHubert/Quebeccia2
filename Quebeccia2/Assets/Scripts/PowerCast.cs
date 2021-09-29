@@ -8,7 +8,9 @@ public class PowerCast : MonoBehaviour
 {
     public PlayerShoot pS;
     public GameObject shield;
-    public GameObject castShield;
+    public GameObject droneX;
+    private GameObject castShield;
+    private GameObject castDroneX;
     public int shieldCooldown = 0;
     public int droneXCooldown = 0;
     public int cooldownMax = 300;
@@ -54,7 +56,7 @@ public class PowerCast : MonoBehaviour
             {
                 if (Input.GetButton("X Controller 1"))
                 {
-                    castShield = Instantiate(shield, new Vector3(transform.position.x + 2.5f, transform.position.y,0), Quaternion.identity);
+                    castShield = Instantiate(droneX, new Vector3(transform.position.x + 0.5f, transform.position.y,0), Quaternion.identity);
                     castShield.layer = 6;
                     droneXCooldown = cooldownMax;
                 }
@@ -63,7 +65,7 @@ public class PowerCast : MonoBehaviour
             {
                 if (Input.GetButton("X Controller 2"))
                 {
-                    castShield = Instantiate(shield, new Vector3(transform.position.x - 2.5f, transform.position.y,0), Quaternion.identity);
+                    castShield = Instantiate(droneX, new Vector3(transform.position.x - 0.5f, transform.position.y,0), Quaternion.identity);
                     castShield.layer = 7;
                     droneXCooldown = cooldownMax;
                 }
