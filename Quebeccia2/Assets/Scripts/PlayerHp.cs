@@ -10,6 +10,7 @@ public class PlayerHp : MonoBehaviour
     public int currentHp;
     public bool canTakeDamage = true;
     public float invulFrames = 1;
+    public Animation anim;
 
     public Image lifeBar;
     
@@ -38,6 +39,7 @@ public class PlayerHp : MonoBehaviour
     IEnumerator InvulnerabilityFrames()
     {
         canTakeDamage = false;
+        anim.Play("InvulFrames");
         yield return new WaitForSeconds(invulFrames);
         canTakeDamage = true;
     }
