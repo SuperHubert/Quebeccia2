@@ -16,7 +16,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/EnemyScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerHp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BulletPool.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WallHp.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1yiYozjMNwOwhs9hDyYOsItHdgG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -65,12 +64,9 @@
       <workItem from="1632736091448" duration="795000" />
       <workItem from="1632738752853" duration="6931000" />
       <workItem from="1632816375329" duration="12204000" />
-<<<<<<< HEAD
-      <workItem from="1632840811920" duration="1863000" />
-=======
       <workItem from="1632840811920" duration="604000" />
-      <workItem from="1632842528962" duration="463000" />
->>>>>>> Hubert
+      <workItem from="1632842528962" duration="1119000" />
+      <workItem from="1632903660714" duration="192000" />
     </task>
     <servers />
   </component>

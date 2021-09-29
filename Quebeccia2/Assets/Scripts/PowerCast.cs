@@ -2,18 +2,26 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PowerCast : MonoBehaviour
 {
     public PlayerShoot pS;
+    
     public GameObject shield;
     public GameObject castShield;
-    public float cooldown = 300;
-    public float cooldownMax = 300;
+    public int cooldown = 300;
+    public int cooldownMax = 300;
+    public Image shieldImage;
 
     private void FixedUpdate()
     {
-        cooldown--;
+
+        if (cooldown > 0)
+        {
+            cooldown--;
+        }
+
     }
 
     private void Update()
@@ -38,6 +46,10 @@ public class PowerCast : MonoBehaviour
                     cooldown = cooldownMax;
                 }
             }
+        }
+        else
+        {
+            shieldImage.fillAmount = (float) cooldown / cooldownMax;
         }
     }
 }
