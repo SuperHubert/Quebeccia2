@@ -462,9 +462,9 @@ GameObject:
   - component: {fileID: 775756069}
   - component: {fileID: 775756068}
   - component: {fileID: 775756067}
-  - component: {fileID: 775756070}
   - component: {fileID: 775756066}
   - component: {fileID: 775756071}
+  - component: {fileID: 775756070}
   - component: {fileID: 775756072}
   - component: {fileID: 775756073}
   m_Layer: 6
@@ -615,8 +615,8 @@ MonoBehaviour:
   startingHp: 6
   currentHp: 6
   canTakeDamage: 1
+  invulFrames: 1
   lifeBar: {fileID: 925966527}
-  rb: {fileID: 775756071}
 --- !u!114 &775756073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1346,8 +1346,8 @@ MonoBehaviour:
   startingHp: 6
   currentHp: 6
   canTakeDamage: 1
+  invulFrames: 1
   lifeBar: {fileID: 1764395900}
-  rb: {fileID: 1827636860}
 --- !u!114 &1827636862
 MonoBehaviour:
   m_ObjectHideFlags: 0
