@@ -13,13 +13,23 @@ public class PowerCast : MonoBehaviour
     private GameObject castDroneX;
     public int shieldCooldown = 0;
     public int droneXCooldown = 0;
-    public int cooldownMax = 300;
-    public Image shieldImage;
+    public int shieldCooldownMax = 300;
+    public int droneXCooldownMax = 300;
+    public Image shieldCDImage;
+    public Image DroneXCDImage;
 
     private void FixedUpdate()
     {
-        droneXCooldown--;
-        shieldCooldown--;
+        if (droneXCooldown > 0)
+        {
+            droneXCooldown--;
+        }
+
+        if (shieldCooldown > 0)
+        {
+            shieldCooldown--;
+        }
+        
     }
 
     private void Update()
@@ -32,7 +42,7 @@ public class PowerCast : MonoBehaviour
                 {
                     castShield = Instantiate(shield, new Vector3(transform.position.x + 2.5f, transform.position.y,0), Quaternion.identity);
                     castShield.layer = 6;
-                    shieldCooldown = cooldownMax;
+                    shieldCooldown = shieldCooldownMax;
                 }
             }
             else
@@ -41,13 +51,13 @@ public class PowerCast : MonoBehaviour
                 {
                     castShield = Instantiate(shield, new Vector3(transform.position.x - 2.5f, transform.position.y,0), Quaternion.identity);
                     castShield.layer = 7;
-                    shieldCooldown = cooldownMax;
+                    shieldCooldown = shieldCooldownMax;
                 }
             }
         }
         else
         {
-            shieldImage.fillAmount = (float) shieldCooldown / cooldownMax;
+            shieldCDImage.fillAmount = (float) shieldCooldown / shieldCooldownMax;
         }
         
         if (droneXCooldown <= 0)
@@ -58,7 +68,7 @@ public class PowerCast : MonoBehaviour
                 {
                     castShield = Instantiate(droneX, new Vector3(transform.position.x + 0.5f, transform.position.y,0), Quaternion.identity);
                     castShield.layer = 6;
-                    droneXCooldown = cooldownMax;
+                    droneXCooldown = droneXCooldownMax;
                 }
             }
             else
@@ -67,13 +77,13 @@ public class PowerCast : MonoBehaviour
                 {
                     castShield = Instantiate(droneX, new Vector3(transform.position.x - 0.5f, transform.position.y,0), Quaternion.identity);
                     castShield.layer = 7;
-                    droneXCooldown = cooldownMax;
+                    droneXCooldown = droneXCooldownMax;
                 }
             }
         }
         else
         {
-            shieldImage.fillAmount = (float) shieldCooldown / cooldownMax;
+            DroneXCDImage.fillAmount = (float) droneXCooldown / droneXCooldownMax;
         }
     }
 }

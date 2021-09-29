@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 5391833174623229346}
   - component: {fileID: 5391833174623229347}
   - component: {fileID: 5391833174623229350}
+  - component: {fileID: 1719750736205983489}
   - component: {fileID: 5391833174623229351}
   - component: {fileID: 5391833174623229353}
   - component: {fileID: 5391833174623229352}
-  - component: {fileID: 1719750736205983489}
   m_Layer: 6
   m_Name: Player 1
   m_TagString: Untagged
@@ -134,6 +134,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 5
+--- !u!111 &1719750736205983489
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5391833174623229344}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: e4d3c65f074d6cd4aa8d6e39b4a98860, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: e4d3c65f074d6cd4aa8d6e39b4a98860, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &5391833174623229351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,6 +182,7 @@ MonoBehaviour:
   currentHp: 6
   canTakeDamage: 1
   invulFrames: 1
+  anim: {fileID: 0}
   lifeBar: {fileID: 0}
 --- !u!114 &5391833174623229352
 MonoBehaviour:
@@ -181,24 +198,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pS: {fileID: 5391833174623229351}
   shield: {fileID: 7194668063039046806, guid: e80b042c033226a44ad39a515f3515fe, type: 3}
-  droneX: {fileID: 0}
+  droneX: {fileID: 5074299450293674439, guid: 146c9d698afbdf144ab101cedcb42c3d, type: 3}
   shieldCooldown: 0
   droneXCooldown: 0
-  cooldownMax: 300
-  shieldImage: {fileID: 0}
---- !u!111 &1719750736205983489
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5391833174623229344}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: e4d3c65f074d6cd4aa8d6e39b4a98860, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: e4d3c65f074d6cd4aa8d6e39b4a98860, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  shieldCooldownMax: 300
+  droneXCooldownMax: 300
+  shieldCDImage: {fileID: 0}
+  DroneXCDImage: {fileID: 0}
