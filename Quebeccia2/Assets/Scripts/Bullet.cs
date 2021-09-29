@@ -13,7 +13,7 @@ public class Bullet : MonoBehaviour
         
         Enemy enemy = other.GetComponent<Enemy>();
         PlayerHp playerHp = other.GetComponent<PlayerHp>();
-        WallHp otherHp = other.GetComponent<WallHp>();
+        GlobalHp otherHp = other.GetComponent<GlobalHp>();
 
         if (playerHp != null)
         {
