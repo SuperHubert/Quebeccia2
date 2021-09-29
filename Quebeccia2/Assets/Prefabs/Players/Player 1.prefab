@@ -147,7 +147,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: e4d3c65f074d6cd4aa8d6e39b4a98860, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!114 &5391833174623229351
@@ -200,8 +200,14 @@ MonoBehaviour:
   shield: {fileID: 7194668063039046806, guid: e80b042c033226a44ad39a515f3515fe, type: 3}
   droneX: {fileID: 5074299450293674439, guid: 146c9d698afbdf144ab101cedcb42c3d, type: 3}
   shieldCooldown: 0
-  droneXCooldown: 0
   shieldCooldownMax: 300
+  droneXCooldown: 0
   droneXCooldownMax: 300
+  YCooldown: 0
+  YdCooldownMax: 300
+  BCooldown: 0
+  BCooldownMax: 300
   shieldCDImage: {fileID: 0}
   DroneXCDImage: {fileID: 0}
+  YCDImage: {fileID: 0}
+  BXCDImage: {fileID: 0}
