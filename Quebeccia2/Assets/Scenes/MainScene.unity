@@ -334,6 +334,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2ea124a68d5faf478310755f941493a, type: 3}
+--- !u!4 &947946801 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4344330136109207357, guid: 31be34db94c56a443821f365a87a72e5, type: 3}
+  m_PrefabInstance: {fileID: 2042115559}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &986891463
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,6 +494,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117589477}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1129130412 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5391833174623229348, guid: 8b2115bb788911d4585e9a3f0609ac6f, type: 3}
+  m_PrefabInstance: {fileID: 1597776251}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1193473957
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,8 +660,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f241644df70f9e47a6616e3ba2a4a66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1Object: {fileID: 0}
-  player2Object: {fileID: 0}
+  player1Object: {fileID: 1129130412}
+  player2Object: {fileID: 947946801}
   maxHeight: 4.75
   axeMargin: 0.5
   player1Axis: 0
