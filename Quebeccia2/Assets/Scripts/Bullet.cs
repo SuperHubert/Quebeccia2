@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Bullet : MonoBehaviour
 {
+    public GameObject origin;
     
     private void OnTriggerEnter2D(Collider2D other)
     {

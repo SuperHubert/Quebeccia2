@@ -10,8 +10,10 @@ public class Enemy : MonoBehaviour
     private GameObject bullet;
     [SerializeField] private int shootCount = 0;
 
-    public int currentHp;
+    public bool canShoot = false;
     
+    public int currentHp;
+
     void Start()
     {
         currentHp = enemyInfo.maxHp;
@@ -20,7 +22,7 @@ public class Enemy : MonoBehaviour
     
     void Update()
     {
-        if (enemyInfo.canShoot)
+        if (enemyInfo.canShoot && canShoot)
         {
             Shoot();
         }
@@ -46,7 +48,8 @@ public class Enemy : MonoBehaviour
     {
         currentHp -= damage;
         if (currentHp <= 0)
-        { 
+        {
+            WaveManager.Instance.KilledOpponent(gameObject);
             Destroy(gameObject);
         }
     }
