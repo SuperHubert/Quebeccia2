@@ -9,10 +9,10 @@ public class PlayerHp : MonoBehaviour
     public int startingHp = 6;
     public int currentHp;
     public bool canTakeDamage = true;
+    public float invulFrames = 1;
 
     public Image lifeBar;
     
-    public Rigidbody2D rb;
 
     void Start()
     {
@@ -38,7 +38,7 @@ public class PlayerHp : MonoBehaviour
     IEnumerator InvulnerabilityFrames()
     {
         canTakeDamage = false;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(invulFrames);
         canTakeDamage = true;
     }
 
