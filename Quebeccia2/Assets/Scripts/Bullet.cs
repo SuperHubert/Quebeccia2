@@ -12,6 +12,7 @@ public class Bullet : MonoBehaviour
         
         Enemy enemy = other.GetComponent<Enemy>();
         PlayerHp playerHp = other.GetComponent<PlayerHp>();
+        WallHp otherHp = other.GetComponent<WallHp>();
 
         if (playerHp != null)
         {
@@ -20,6 +21,10 @@ public class Bullet : MonoBehaviour
         else if (enemy != null)
         {
             enemy.TakeDamage(1);
+        }
+        else if (otherHp != null)
+        {
+            otherHp.TakeDamage(1);
         }
         
         gameObject.SetActive(false);

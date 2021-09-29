@@ -8,19 +8,23 @@ public class WallHp : MonoBehaviour
 {
     public float startingHp = 6;
     public float currentHp;
-
-    public Image lifeBar;
+    public bool decay = false;
+    public float decaySpeed = 0.1f;
     
-    public Rigidbody2D rb;
-
     void Start()
     {
-        currentHp = startingHp;
+        if (decay)
+        {
+            currentHp = startingHp;
+        }
     }
 
     private void FixedUpdate()
     {
-        currentHp -= 0.1f;
+        if (decay)
+        {
+            currentHp -= decaySpeed;
+        }
     }
 
     public void TakeDamage(int damage)
@@ -31,7 +35,6 @@ public class WallHp : MonoBehaviour
             currentHp = 0;
             Destroy(gameObject);
         }
-        lifeBar.fillAmount = (float)currentHp / startingHp;
     }
         
 }
