@@ -1460,6 +1460,10 @@ PrefabInstance:
       propertyPath: shieldCDImage
       value: 
       objectReference: {fileID: 894343571}
+    - target: {fileID: 5391833174623229352, guid: 8b2115bb788911d4585e9a3f0609ac6f, type: 3}
+      propertyPath: droneXCooldownMax
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5391833174623229353, guid: 8b2115bb788911d4585e9a3f0609ac6f, type: 3}
       propertyPath: anim
       value: 
