@@ -8,6 +8,7 @@ public class WallHp : MonoBehaviour
 {
     public float startingHp = 6;
     public float currentHp;
+    public bool decay = false;
 
     public Image lifeBar;
     
@@ -15,7 +16,10 @@ public class WallHp : MonoBehaviour
 
     void Start()
     {
-        currentHp = startingHp;
+        if (decay)
+        {
+            currentHp = startingHp;
+        }
     }
 
     private void FixedUpdate()
@@ -31,7 +35,6 @@ public class WallHp : MonoBehaviour
             currentHp = 0;
             Destroy(gameObject);
         }
-        lifeBar.fillAmount = (float)currentHp / startingHp;
     }
         
 }

@@ -12,6 +12,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WaveManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DebugController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObjects/Enemies/EnemyScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerHp.cs" root0="FORCE_HIGHLIGHTING" />
@@ -66,7 +67,7 @@
       <workItem from="1632816375329" duration="12204000" />
       <workItem from="1632840811920" duration="604000" />
       <workItem from="1632842528962" duration="1119000" />
-      <workItem from="1632903660714" duration="1524000" />
+      <workItem from="1632903660714" duration="2072000" />
     </task>
     <servers />
   </component>
