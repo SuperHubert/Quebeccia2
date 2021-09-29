@@ -5,9 +5,8 @@ using UnityEngine;
 
 public class Explosion : MonoBehaviour
 {
-    public Collider range;
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log(other);
     }
