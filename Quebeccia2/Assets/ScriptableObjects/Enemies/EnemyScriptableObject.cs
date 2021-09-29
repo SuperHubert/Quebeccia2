@@ -12,6 +12,7 @@ public class EnemyScriptableObject : ScriptableObject
 
     public int maxHp;
     public int damageOnCollision;
+    public int scoreIncrease;
     
     public bool canShoot;
     public GameObject bullet;

@@ -49,15 +49,17 @@ public class PlayerShoot : MonoBehaviour
 
     void ShootBullet()
     {
-        bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        bullet = bulletPool.SpawnFromPool("Player Bullets", transform.position, Quaternion.identity);
         if (isPlayer1)
         {
             bullet.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed;
+            bullet.GetComponent<Bullet>().origin = gameObject;
             bullet.layer = 8;
         }
         else
         {
             bullet.GetComponent<Rigidbody2D>().velocity = transform.right * bulletSpeed * -1;
+            bullet.GetComponent<Bullet>().origin = gameObject;
             bullet.layer = 9;
         }
         

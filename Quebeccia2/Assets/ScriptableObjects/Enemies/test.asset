@@ -18,6 +18,7 @@ MonoBehaviour:
   moveSpeed: 0
   maxHp: 4
   damageOnCollision: 0
+  scoreIncrease: 5
   canShoot: 1
   bullet: {fileID: 6338152922712872122, guid: 00f6b6b3c2185214ca2c8bf0dbdb3f32, type: 3}
   damageOnBullet: 0
