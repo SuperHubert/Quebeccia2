@@ -37,6 +37,11 @@ public class MixteV2 : MonoBehaviour
                     {
                         enemy.GetComponent<BackAndForth>().canMove = true;
                     }
+
+                    if (enemy.GetComponent<Shooter>())
+                    {
+                        enemy.GetComponent<Shooter>().canShoot = true;
+                    }
                 }
             }
         }
