@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4480596859894785202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4480596859894785200}
+  - component: {fileID: 4480596859894785201}
+  - component: {fileID: 4480596859894785214}
+  - component: {fileID: 4480596859894785213}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4480596859894785200
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480596859894785202}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4480596859894785201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480596859894785202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f241644df70f9e47a6616e3ba2a4a66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1Object: {fileID: 0}
+  player2Object: {fileID: 0}
+  maxHeight: 4.75
+  axeMargin: 0.5
+  player1Axis: 0
+  player2Axis: 0
+  speed: 5
+--- !u!114 &4480596859894785214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480596859894785202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab8994de03ff451489ca4bff5106f4c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWave: 0
+  canSpawnWave: 0
+  listOfFormations:
+  - {fileID: 7063341672188006967, guid: a923bf3d2a3c20349b7455c899479ba8, type: 3}
+  listOfOpponents: []
+--- !u!114 &4480596859894785213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480596859894785202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e245d278933aef343816aed60f13d1e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1Score: 0
+  player2Score: 0
+  player1ScoreText: {fileID: 0}
+  player2ScoreText: {fileID: 0}
