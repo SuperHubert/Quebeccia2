@@ -60,16 +60,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3168676098774786326, guid: 373318a9c5d63864e9f10eaafd10eb8f, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3168676098774786326, guid: 373318a9c5d63864e9f10eaafd10eb8f, type: 3}
       propertyPath: m_Animation
       value: 
-      objectReference: {fileID: 7400000, guid: c43119fb9599843418a2ced32079667e, type: 2}
+      objectReference: {fileID: 7400000, guid: f44f3d6ced47f144c9605d28bddc5e4a, type: 2}
+    - target: {fileID: 3168676098774786326, guid: 373318a9c5d63864e9f10eaafd10eb8f, type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3168676098774786326, guid: 373318a9c5d63864e9f10eaafd10eb8f, type: 3}
       propertyPath: m_Animations.Array.data[0]
       value: 
-      objectReference: {fileID: 7400000, guid: c43119fb9599843418a2ced32079667e, type: 2}
+      objectReference: {fileID: 7400000, guid: f44f3d6ced47f144c9605d28bddc5e4a, type: 2}
+    - target: {fileID: 3168676098774786326, guid: 373318a9c5d63864e9f10eaafd10eb8f, type: 3}
+      propertyPath: m_Animations.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3168676098774786327, guid: 373318a9c5d63864e9f10eaafd10eb8f, type: 3}
       propertyPath: m_Name
       value: DroneX
