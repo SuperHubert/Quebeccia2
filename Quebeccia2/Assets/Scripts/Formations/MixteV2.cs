@@ -7,8 +7,7 @@ public class MixteV2 : MonoBehaviour
     public GameObject mainParent;
     public float mainSpeed = 1;
     public float timeSpent = 0;
-    private bool canActivate = true;
-    
+
     void Start()
     {
         mainParent = this.gameObject;

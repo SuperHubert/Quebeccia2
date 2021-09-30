@@ -1235,6 +1235,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1927196294}
     - target: {fileID: 4480596859894785214, guid: 021662afc447f274780e96ca68456cb4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4480596859894785214, guid: 021662afc447f274780e96ca68456cb4, type: 3}
       propertyPath: listOfFormations.Array.size
       value: 4
       objectReference: {fileID: 0}

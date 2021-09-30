@@ -8,6 +8,8 @@ public class PowerCast : MonoBehaviour
 {
     public PlayerShoot pS;
     public GameObject droneX;
+    public GameObject objectY;
+    public GameObject objectB;
     private GameObject castShield;
     private GameObject castDroneX;
     private GameObject castY;
@@ -128,8 +130,8 @@ public class PowerCast : MonoBehaviour
             {
                 if (Input.GetButton("Y Controller 1"))
                 {
-                        //castShield = Instantiate(droneX, new Vector3(transform.position.x + 0.5f, transform.position.y,0), Quaternion.identity);
-                        //castShield.layer = 6;
+                    //castY = Instantiate(objectY, new Vector3(transform.position.x + 0.5f, transform.position.y,0), Quaternion.identity);
+                    //castY.layer = 6;
                     yCooldown = yCooldownMax;
                 }
             }
@@ -137,8 +139,8 @@ public class PowerCast : MonoBehaviour
             {
                 if (Input.GetButton("Y Controller 2"))
                 {
-                        //castShield = Instantiate(droneX, new Vector3(transform.position.x - 0.5f, transform.position.y,0), Quaternion.identity);
-                        //castShield.layer = 7;
+                    //castY = Instantiate(objectY, new Vector3(transform.position.x - 0.5f, transform.position.y,0), Quaternion.identity);
+                    //castY.layer = 7;
                     yCooldown = yCooldownMax;
                 }
             }
@@ -157,8 +159,8 @@ public class PowerCast : MonoBehaviour
             {
                 if (Input.GetButton("B Controller 1"))
                 {
-                    //castShield = Instantiate(droneX, new Vector3(transform.position.x + 0.5f, transform.position.y,0), Quaternion.identity);
-                    //castShield.layer = 6;
+                    //castB = Instantiate(objectB, new Vector3(transform.position.x + 0.5f, transform.position.y,0), Quaternion.identity);
+                    //castB.layer = 6;
                     bCooldown = bCooldownMax;
                 }
             }
@@ -166,8 +168,8 @@ public class PowerCast : MonoBehaviour
             {
                 if (Input.GetButton("B Controller 2"))
                 {
-                    //castShield = Instantiate(droneX, new Vector3(transform.position.x - 0.5f, transform.position.y,0), Quaternion.identity);
-                    //castShield.layer = 7;
+                    //castB = Instantiate(objectB, new Vector3(transform.position.x - 0.5f, transform.position.y,0), Quaternion.identity);
+                    //castB.layer = 7;
                     bCooldown = bCooldownMax;
                 }
             }
