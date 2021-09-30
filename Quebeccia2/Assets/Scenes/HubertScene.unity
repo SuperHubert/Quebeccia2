@@ -792,6 +792,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 755954027145856511, guid: 3889e144406c53e41b8a4be7a1cffec4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1262641326557569728, guid: 3889e144406c53e41b8a4be7a1cffec4, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1081,11 +1085,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4781229819423731686, guid: 1de55b1f3f2c38f49bd694b9327bbbac, type: 3}
       propertyPath: pools.Array.size
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4781229819423731686, guid: 1de55b1f3f2c38f49bd694b9327bbbac, type: 3}
       propertyPath: pools.Array.data[3].tag
       value: Enemy Bullets
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781229819423731686, guid: 1de55b1f3f2c38f49bd694b9327bbbac, type: 3}
+      propertyPath: pools.Array.data[4].tag
+      value: DroneX P1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781229819423731686, guid: 1de55b1f3f2c38f49bd694b9327bbbac, type: 3}
+      propertyPath: pools.Array.data[5].tag
+      value: DroneX P2
       objectReference: {fileID: 0}
     - target: {fileID: 4781229819423731686, guid: 1de55b1f3f2c38f49bd694b9327bbbac, type: 3}
       propertyPath: pools.Array.data[0].size
@@ -1096,9 +1108,25 @@ PrefabInstance:
       value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 4781229819423731686, guid: 1de55b1f3f2c38f49bd694b9327bbbac, type: 3}
+      propertyPath: pools.Array.data[4].size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781229819423731686, guid: 1de55b1f3f2c38f49bd694b9327bbbac, type: 3}
+      propertyPath: pools.Array.data[5].size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781229819423731686, guid: 1de55b1f3f2c38f49bd694b9327bbbac, type: 3}
       propertyPath: pools.Array.data[3].prefab
       value: 
       objectReference: {fileID: 6338152922712872122, guid: 00f6b6b3c2185214ca2c8bf0dbdb3f32, type: 3}
+    - target: {fileID: 4781229819423731686, guid: 1de55b1f3f2c38f49bd694b9327bbbac, type: 3}
+      propertyPath: pools.Array.data[4].prefab
+      value: 
+      objectReference: {fileID: 5074299450293674439, guid: 146c9d698afbdf144ab101cedcb42c3d, type: 3}
+    - target: {fileID: 4781229819423731686, guid: 1de55b1f3f2c38f49bd694b9327bbbac, type: 3}
+      propertyPath: pools.Array.data[5].prefab
+      value: 
+      objectReference: {fileID: 5074299450293674439, guid: 146c9d698afbdf144ab101cedcb42c3d, type: 3}
     - target: {fileID: 4781229819423731687, guid: 1de55b1f3f2c38f49bd694b9327bbbac, type: 3}
       propertyPath: m_Name
       value: Object Pooler

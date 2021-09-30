@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 3168676098774786330}
   - component: {fileID: 3168676098774786325}
   - component: {fileID: 3168676098774786324}
-  - component: {fileID: 8224150015166221458}
-  - component: {fileID: 3168676098774786326}
-  - component: {fileID: 8103317397851506117}
   - component: {fileID: -8022455604679414275}
+  - component: {fileID: 3168676098774786326}
+  - component: {fileID: 8224150015166221458}
+  - component: {fileID: 7219940810473115546}
   m_Layer: 6
   m_Name: DroneX
   m_TagString: Untagged
@@ -112,52 +112,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8224150015166221458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3168676098774786327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 212a4d12c7fa5e34293a6964f8d6cc27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingHp: 50
-  currentHp: 0
-  decay: 1
-  decaySpeed: 0.1
---- !u!111 &3168676098774786326
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3168676098774786327}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: c43119fb9599843418a2ced32079667e, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: f44f3d6ced47f144c9605d28bddc5e4a, type: 2}
-  - {fileID: 7400000, guid: c43119fb9599843418a2ced32079667e, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
---- !u!114 &8103317397851506117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3168676098774786327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0b7783d2e5572442877df24cf11d678, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosion: {fileID: 7396813465215793446, guid: 73aae6048eb0d364cb955583193138d8, type: 3}
 --- !u!50 &-8022455604679414275
 Rigidbody2D:
   serializedVersion: 4
@@ -179,3 +133,48 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!111 &3168676098774786326
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3168676098774786327}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c43119fb9599843418a2ced32079667e, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: f44f3d6ced47f144c9605d28bddc5e4a, type: 2}
+  - {fileID: 7400000, guid: c43119fb9599843418a2ced32079667e, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &8224150015166221458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3168676098774786327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 212a4d12c7fa5e34293a6964f8d6cc27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHp: 50
+  currentHp: 0
+  decay: 1
+  decaySpeed: 0.1
+--- !u!114 &7219940810473115546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3168676098774786327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5fd6af71c8444ebbff14c9ccccb4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

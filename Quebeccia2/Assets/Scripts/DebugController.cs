@@ -7,9 +7,10 @@ public class DebugController : MonoBehaviour
 {
     private void Update()
     {
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A))
         {
-            ScoreManager.Instance.AddRessources(1,1);
+            ScoreManager.Instance.AddRessources(1,6);
+            ScoreManager.Instance.AddRessources(2,6);
         }
     }
 }
