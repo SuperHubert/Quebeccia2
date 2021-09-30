@@ -10,6 +10,7 @@ public class PowerCast : MonoBehaviour
     public GameObject droneX;
     private GameObject castShield;
     private GameObject castDroneX;
+    private GameObject castClone;
     private GameObject castY;
     private GameObject castB;
     public int shieldCooldown = 0;
@@ -76,7 +77,7 @@ public class PowerCast : MonoBehaviour
             {
                 if (Input.GetButton("A Controller 2"))
                 {
-                    castShield = BulletPool.Instance.SpawnFromPool("Shields P2", new Vector3(transform.position.x - 2.5f, transform.position.y,0), Quaternion.identity);
+                    castShield = BulletPool.Instance.SpawnFromPool("Shields P2", new Vector3(transform.position.x - 2f, transform.position.y,0), Quaternion.identity);
                     castShield.layer = 7;
                     shieldCooldown = shieldCooldownMax;
                 }
@@ -127,7 +128,7 @@ public class PowerCast : MonoBehaviour
                 if (Input.GetButton("Y Controller 1"))
                 {
                     //castShield = Instantiate(droneX, new Vector3(transform.position.x + 0.5f, transform.position.y,0), Quaternion.identity);
-                    //castShield.layer = 6;
+                   // castShield.layer = 6;
                     yCooldown = yCooldownMax;
                 }
             }
