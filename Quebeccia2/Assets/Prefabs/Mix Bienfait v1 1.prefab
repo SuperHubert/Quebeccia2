@@ -213,6 +213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shooter (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7219563552732987053, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
+      propertyPath: lookAtPlayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
 --- !u!4 &8924794494755505694 stripped
@@ -294,6 +298,10 @@ PrefabInstance:
     - target: {fileID: 3917167810544995794, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
       propertyPath: m_Name
       value: Shooter (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7219563552732987053, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
+      propertyPath: lookAtPlayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
@@ -447,6 +455,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shooter (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5456320884350811916, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
+      propertyPath: lookAtPlayer1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7219563552732987053, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
+      propertyPath: lookAtPlayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
 --- !u!4 &8924794494624042660 stripped
@@ -536,6 +552,10 @@ PrefabInstance:
     - target: {fileID: 3917167810544995794, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
       propertyPath: m_Name
       value: Shooter (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7219563552732987053, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
+      propertyPath: lookAtPlayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
@@ -999,6 +1019,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shooter (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5456320884350811916, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
+      propertyPath: lookAtPlayer1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7219563552732987053, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
+      propertyPath: lookAtPlayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
 --- !u!4 &8924794495860022185 stripped
@@ -1217,6 +1245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shooter (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7219563552732987053, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
+      propertyPath: lookAtPlayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
 --- !u!4 &8924794495578204802 stripped
@@ -1369,6 +1401,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shooter (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5456320884350811916, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
+      propertyPath: lookAtPlayer1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7219563552732987053, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
+      propertyPath: lookAtPlayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
 --- !u!4 &8924794495273398076 stripped
@@ -1458,6 +1498,10 @@ PrefabInstance:
     - target: {fileID: 3917167810544995794, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
       propertyPath: m_Name
       value: Shooter (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7219563552732987053, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
+      propertyPath: lookAtPlayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
@@ -1553,6 +1597,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shooter (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5456320884350811916, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
+      propertyPath: lookAtPlayer1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7219563552732987053, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
+      propertyPath: lookAtPlayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
 --- !u!4 &8924794495122774545 stripped
@@ -1634,6 +1686,14 @@ PrefabInstance:
     - target: {fileID: 3917167810544995794, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
       propertyPath: m_Name
       value: Shooter
+      objectReference: {fileID: 0}
+    - target: {fileID: 5456320884350811916, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
+      propertyPath: lookAtPlayer1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7219563552732987053, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}
+      propertyPath: lookAtPlayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b9cb1118f22762428c56f011e54f1da, type: 3}

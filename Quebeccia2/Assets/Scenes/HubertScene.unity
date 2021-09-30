@@ -1234,6 +1234,22 @@ PrefabInstance:
       propertyPath: player2ScoreText
       value: 
       objectReference: {fileID: 1927196294}
+    - target: {fileID: 4480596859894785214, guid: 021662afc447f274780e96ca68456cb4, type: 3}
+      propertyPath: listOfFormations.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4480596859894785214, guid: 021662afc447f274780e96ca68456cb4, type: 3}
+      propertyPath: listOfFormations.Array.data[1]
+      value: 
+      objectReference: {fileID: 6135653763273515916, guid: 41f5edf6582904b43b2a5cf482d1c371, type: 3}
+    - target: {fileID: 4480596859894785214, guid: 021662afc447f274780e96ca68456cb4, type: 3}
+      propertyPath: listOfFormations.Array.data[2]
+      value: 
+      objectReference: {fileID: 322926184935413920, guid: e6a1213fc4065c24dbc1857822365293, type: 3}
+    - target: {fileID: 4480596859894785214, guid: 021662afc447f274780e96ca68456cb4, type: 3}
+      propertyPath: listOfFormations.Array.data[3]
+      value: 
+      objectReference: {fileID: 2607717620596128026, guid: 358a68d1ca363664e98f9e3dd128a739, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 021662afc447f274780e96ca68456cb4, type: 3}
 --- !u!1001 &5391833175262006401

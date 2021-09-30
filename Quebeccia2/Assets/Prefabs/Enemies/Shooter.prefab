@@ -117,6 +117,8 @@ MonoBehaviour:
   maxHp: 3
   currentHp: 0
   scoreIncrease: 15
+  timeUntilActive: 1
+  active: 0
 --- !u!114 &2876788831212653746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa1876372329264d82bda7669a0aeee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.1
+  speed: 1
   listOfPositions: []
   phase: 0
   targetPos: {x: 0, y: 0, z: 0}

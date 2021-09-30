@@ -22,14 +22,19 @@ public class WaveManager : MonoBehaviour
     
     void Start()
     {
-        currentWave = 1;
+        currentWave = 0;
     }
     
     void Update()
     {
         if (AreEnemiesDead())
         {
-            Instantiate(listOfFormations[0]);
+            currentWave++;
+            if (currentWave == listOfFormations.Count)
+            {
+                currentWave = 0;
+            }
+            Instantiate(listOfFormations[currentWave]);
             AddEnemiesToList();
         }
     }
