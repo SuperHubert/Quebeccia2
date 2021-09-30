@@ -5,29 +5,27 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public EnemyScriptableObject enemyInfo;
-
     private GameObject bullet;
     [SerializeField] private int shootCount = 0;
 
     public bool canShoot = false;
     
+    public int maxHp = 5;
     public int currentHp;
+
+    public int scoreIncrease = 15;
 
     void Start()
     {
-        currentHp = enemyInfo.maxHp;
-        
+        currentHp = maxHp;
     }
     
     void Update()
     {
-        if (enemyInfo.canShoot && canShoot)
-        {
-            Shoot();
-        }
+        
     }
 
+    /*
     void Shoot()
     {
         if (shootCount > 0) 
@@ -43,6 +41,21 @@ public class Enemy : MonoBehaviour
             shootCount = enemyInfo.fireRate;
         }
     }
+    */
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log(other);
+        
+        PlayerHp playerHp = other.GetComponent<PlayerHp>();
+
+        if (playerHp != null)
+        {
+            playerHp.TakeDamage(1);
+            Destroy(gameObject);
+        }
+        
+    }
     
     public void TakeDamage(int damage,int player)
     {
@@ -50,11 +63,13 @@ public class Enemy : MonoBehaviour
         if (currentHp <= 0)
         {
             WaveManager.Instance.KilledOpponent(gameObject);
-            ScoreManager.Instance.AddScore(player,enemyInfo.scoreIncrease);
+            ScoreManager.Instance.AddScore(player,scoreIncrease);
             Destroy(gameObject);
             
         }
     }
+    
+    
         
 }
 
