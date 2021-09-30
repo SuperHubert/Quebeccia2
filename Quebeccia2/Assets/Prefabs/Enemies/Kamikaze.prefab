@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 3699113499258539495}
   - component: {fileID: 1805349337474406022}
   - component: {fileID: 1409229139435138474}
-  m_Layer: 0
-  m_Name: Enemy
+  m_Layer: 11
+  m_Name: Kamikaze
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

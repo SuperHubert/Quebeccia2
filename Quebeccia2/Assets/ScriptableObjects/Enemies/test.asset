@@ -17,7 +17,7 @@ MonoBehaviour:
   targetPos: {x: 0, y: 0}
   moveSpeed: 0
   maxHp: 4
-  damageOnCollision: 0
+  damageOnCollision: 5
   scoreIncrease: 5
   canShoot: 1
   bullet: {fileID: 6338152922712872122, guid: 00f6b6b3c2185214ca2c8bf0dbdb3f32, type: 3}

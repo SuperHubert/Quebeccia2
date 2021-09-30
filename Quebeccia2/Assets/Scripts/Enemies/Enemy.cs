@@ -43,11 +43,11 @@ public class Enemy : MonoBehaviour
     }
     */
     
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         Debug.Log(other);
         
-        PlayerHp playerHp = other.GetComponent<PlayerHp>();
+        PlayerHp playerHp = other.gameObject.GetComponent<PlayerHp>();
 
         if (playerHp != null)
         {

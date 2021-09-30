@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class MixteV2 : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject mainParent;
+    public float mainSpeed = 1;
+    public int phase = 0;
+    
     void Start()
     {
-        
+        mainParent.transform.position = Vector3.up * 10;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
-        
+        if (phase == 0)
+        {
+            float step =  mainSpeed * Time.deltaTime;
+            mainParent.transform.position = Vector3.MoveTowards(mainParent.transform.position, Vector3.zero, step);
+        }
+
+        if (mainParent.transform.position = Vector3.zero)
+        {
+            
+        }
     }
 }
