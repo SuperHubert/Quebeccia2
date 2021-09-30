@@ -6,7 +6,6 @@ using UnityEngine;
 public class playerClone : MonoBehaviour
 {
     public GameObject player;
-
     void FixedUpdate()
     {
         gameObject.layer = player.layer;
