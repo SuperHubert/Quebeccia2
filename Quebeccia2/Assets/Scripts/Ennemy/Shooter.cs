@@ -13,7 +13,8 @@ public class Shooter : MonoBehaviour
     private BulletPool bulletPool;
     private GameObject bullet;
 
-    private bool lookAtPlayer = false;
+    public bool lookAtPlayer = false;
+    public bool fixedRotation = false;
     public Vector3 target;
     
     void Update()
@@ -22,7 +23,12 @@ public class Shooter : MonoBehaviour
         {
             Shoot(); 
         }
-        
+
+        if (!fixedRotation)
+        {
+            transform.LookAt(target,Vector3.forward);
+        }
+
     }
 
     void Shoot()
@@ -39,5 +45,5 @@ public class Shooter : MonoBehaviour
             cooldown = coolDownMax;
         }
     }
-    
+
 }
