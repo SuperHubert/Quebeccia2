@@ -14,7 +14,9 @@ GameObject:
   - component: {fileID: 7247867059064098720}
   - component: {fileID: 6760825861121690838}
   - component: {fileID: 2876788831212653746}
-  m_Layer: 0
+  - component: {fileID: 7219563552732987053}
+  - component: {fileID: 5456320884350811916}
+  m_Layer: 11
   m_Name: Shooter
   m_TagString: E
   m_Icon: {fileID: 0}
@@ -112,8 +114,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 471f00921c21ce24bb7b4548b992e80b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootCount: 0
-  canShoot: 1
   maxHp: 3
   currentHp: 0
   scoreIncrease: 15
@@ -134,3 +134,31 @@ MonoBehaviour:
   phase: 0
   targetPos: {x: 0, y: 0, z: 0}
   canMove: 0
+--- !u!114 &7219563552732987053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3917167810544995794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca4ad6d0ad32afd48a0706df7fbb585f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldown: 4
+  coolDownMax: 50
+  bulletSpeed: 10
+--- !u!114 &5456320884350811916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3917167810544995794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c66652fbdf01b42a47365776c9ec97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookAtPlayer1: 0
