@@ -14,7 +14,6 @@ public class BackAndForth : MonoBehaviour
     
     void Start()
     {
-        DebugLog();
         targetPos = listOfPositions[0];
     }
     
@@ -47,11 +46,5 @@ public class BackAndForth : MonoBehaviour
         }
 
         targetPos = listOfPositions[phase];
-    }
-
-    void DebugLog()
-    {
-        Debug.Log(listOfPositions[0]);
-        
     }
 }

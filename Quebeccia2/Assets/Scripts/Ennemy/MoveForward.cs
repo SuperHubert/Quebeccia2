@@ -8,7 +8,12 @@ public class MoveForward : MonoBehaviour
     public float speed = 0.1f;
     public bool p1target = true;
     public bool canMove = false;
-    
+
+    private void Start()
+    {
+        StartCoroutine(AutoKill());
+    }
+
     void Update()
     {
         if (!canMove) return;
@@ -22,8 +27,13 @@ public class MoveForward : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, transform.position + Vector3.left * -10, step);
         }
     }
-    
-    //IEnumerator AutoKill()
+
+    IEnumerator AutoKill()
+    {
+        yield return new WaitForSeconds(10);
+        WaveManager.Instance.KilledOpponent(gameObject);
+        Destroy(gameObject);
+    }
     
     
 }

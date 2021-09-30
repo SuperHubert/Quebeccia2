@@ -49,15 +49,6 @@ public class WaveManager : MonoBehaviour
     
     public bool AreEnemiesDead()
     {
-        if(listOfOpponents.Count <= 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return (listOfOpponents.Count <= 0);
     }
-    
-    
 }
