@@ -46,4 +46,9 @@ public class MixteV2 : MonoBehaviour
             }
         }
     }
+
+    void ActivateUnits()
+    {
+        
+    }
 }

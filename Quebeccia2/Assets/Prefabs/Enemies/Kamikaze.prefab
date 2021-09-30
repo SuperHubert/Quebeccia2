@@ -137,6 +137,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c123de4f852a3e64eb0c0db6c2ddac50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  p1target: 1
+  speed: 6
+  p1target: 0
+  asTarget: 0
+  targetPlayerPos: 0
+  targetPlayer1: 0
+  target: {x: 0, y: 0, z: 0}
   canMove: 0

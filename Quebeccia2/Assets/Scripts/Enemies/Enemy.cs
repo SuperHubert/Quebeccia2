@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     public int currentHp;
 
     public int scoreIncrease = 15;
+    public int playOrder = 0;
 
     void Start()
     {
