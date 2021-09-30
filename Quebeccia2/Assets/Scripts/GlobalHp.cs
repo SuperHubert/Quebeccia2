@@ -21,11 +21,6 @@ public class GlobalHp : MonoBehaviour
         if (decay)
         {
             currentHp -= decaySpeed;
-            if (currentHp <= 0)
-            {
-                currentHp = 0;
-                gameObject.SetActive(false);
-            }
         }
     }
 
@@ -35,7 +30,7 @@ public class GlobalHp : MonoBehaviour
         if (currentHp <= 0)
         {
             currentHp = 0;
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
         
