@@ -6,7 +6,8 @@ public class MixteV2 : MonoBehaviour
 {
     public GameObject mainParent;
     public float mainSpeed = 1;
-    public int phase = 0;
+    public float timeSpent = 0;
+    private bool canActivate = false;
     
     void Start()
     {
@@ -16,18 +17,29 @@ public class MixteV2 : MonoBehaviour
     
     void Update()
     {
-        if (phase == 0)
+        if (mainParent.transform.position == Vector3.zero)
+        {
+            if (canActivate)
+            {
+                canActivate = false;
+                StartCoroutine(WaitNextPhase());
+            }
+            
+        }
+        else
         {
             float step =  mainSpeed * Time.deltaTime;
             mainParent.transform.position = Vector3.MoveTowards(mainParent.transform.position, Vector3.zero, step);
         }
+    }
 
-        if (mainParent.transform.position == Vector3.zero)
+    void ActivateUnits(float unitOrder)
+    {
+        foreach (Transform branch in mainParent.transform)
         {
-            phase++;
-            foreach (Transform branch in mainParent.transform)
+            foreach (Transform enemy in branch)
             {
-                foreach (Transform enemy in branch)
+                if (enemy.GetComponent<Enemy>().timeUntilActive == unitOrder)
                 {
                     if (enemy.GetComponent<MoveForward>())
                     {
@@ -37,18 +49,23 @@ public class MixteV2 : MonoBehaviour
                     {
                         enemy.GetComponent<BackAndForth>().canMove = true;
                     }
-
+                    
                     if (enemy.GetComponent<Shooter>())
                     {
                         enemy.GetComponent<Shooter>().canShoot = true;
                     }
                 }
+                
             }
         }
     }
 
-    void ActivateUnits()
+    IEnumerator WaitNextPhase()
     {
-        
+        yield return new WaitForSeconds(0.1f);
+        timeSpent += 0.1f;
+        ActivateUnits(timeSpent);
+        canActivate = true;
+
     }
 }
