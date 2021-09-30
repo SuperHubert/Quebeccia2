@@ -6,7 +6,8 @@ public class MixteV2 : MonoBehaviour
 {
     public GameObject mainParent;
     public float mainSpeed = 1;
-    public int phase = 0;
+    public float timeSpent = 0;
+    private bool canActivate = true;
     
     void Start()
     {
@@ -16,39 +17,12 @@ public class MixteV2 : MonoBehaviour
     
     void Update()
     {
-        if (phase == 0)
+        if (mainParent.transform.position != Vector3.zero)
         {
             float step =  mainSpeed * Time.deltaTime;
             mainParent.transform.position = Vector3.MoveTowards(mainParent.transform.position, Vector3.zero, step);
         }
-
-        if (mainParent.transform.position == Vector3.zero)
-        {
-            phase++;
-            foreach (Transform branch in mainParent.transform)
-            {
-                foreach (Transform enemy in branch)
-                {
-                    if (enemy.GetComponent<MoveForward>())
-                    {
-                        enemy.GetComponent<MoveForward>().canMove = true;
-                    }
-                    else if (enemy.GetComponent<BackAndForth>())
-                    {
-                        enemy.GetComponent<BackAndForth>().canMove = true;
-                    }
-
-                    if (enemy.GetComponent<Shooter>())
-                    {
-                        enemy.GetComponent<Shooter>().canShoot = true;
-                    }
-                }
-            }
-        }
-    }
-
-    void ActivateUnits()
-    {
-        
     }
 }
+
+
