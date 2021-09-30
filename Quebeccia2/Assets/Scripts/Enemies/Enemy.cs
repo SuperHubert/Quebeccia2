@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     public int currentHp;
 
     public int scoreIncrease = 15;
+    public int ressourceIncrease = 1;
     [Tooltip("Une seule décimale après la virgule s.v.p")]
     public float timeUntilActive = 1;
 
@@ -42,6 +43,7 @@ public class Enemy : MonoBehaviour
         {
             WaveManager.Instance.KilledOpponent(gameObject);
             ScoreManager.Instance.AddScore(player,scoreIncrease);
+            ScoreManager.Instance.AddRessources(player,ressourceIncrease);
             Destroy(gameObject);
             
         }

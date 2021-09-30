@@ -9,6 +9,8 @@ public class WaveManager : MonoBehaviour
 
     public List<GameObject> listOfFormations = new List<GameObject>();
     public List<GameObject> listOfOpponents = new List<GameObject>();
+
+    private GameObject waveParent;
     
     #region Singleton
     public static WaveManager Instance;
@@ -29,12 +31,13 @@ public class WaveManager : MonoBehaviour
     {
         if (AreEnemiesDead())
         {
+            Destroy(waveParent);
             currentWave++;
             if (currentWave == listOfFormations.Count)
             {
                 currentWave = 0;
             }
-            Instantiate(listOfFormations[currentWave]);
+            waveParent = Instantiate(listOfFormations[currentWave]);
             AddEnemiesToList();
         }
     }
