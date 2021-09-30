@@ -15,14 +15,14 @@ public class PowerCast : MonoBehaviour
     public int shieldCooldownMax = 300;
     public int droneXCooldown = 0;
     public int droneXCooldownMax = 300;
-    public int YCooldown = 0;
-    public int YdCooldownMax = 300;
-    public int BCooldown = 0;
-    public int BCooldownMax = 300;
+    public int yCooldown = 0;
+    public int yCooldownMax = 300;
+    public int bCooldown = 0;
+    public int bCooldownMax = 300;
     public Image shieldCDImage;
-    public Image DroneXCDImage;
-    public Image YCDImage;
-    public Image BXCDImage;
+    public Image droneXCDImage;
+    public Image yCDImage;
+    public Image bXCDImage;
 
     private void FixedUpdate()
     {
@@ -35,10 +35,30 @@ public class PowerCast : MonoBehaviour
         {
             shieldCooldown--;
         }
+        if (yCooldown > 0)
+        {
+            yCooldown--;
+        }
+
+        if (bCooldown > 0)
+        {
+            bCooldown--;
+        }
         
     }
 
     private void Update()
+    {
+        ShieldAbility();
+        
+        DroneXAbility();
+
+        YAbility();
+
+        BAbility();
+    }
+
+    void ShieldAbility()
     {
         if (shieldCooldown <= 0)
         {
@@ -65,7 +85,10 @@ public class PowerCast : MonoBehaviour
         {
             shieldCDImage.fillAmount = (float) shieldCooldown / shieldCooldownMax;
         }
-        
+    }
+
+    void DroneXAbility()
+    {
         if (droneXCooldown <= 0)
         {
             if (pS.isPlayer1)
@@ -89,7 +112,65 @@ public class PowerCast : MonoBehaviour
         }
         else
         {
-            DroneXCDImage.fillAmount = (float) droneXCooldown / droneXCooldownMax;
+            droneXCDImage.fillAmount = (float) droneXCooldown / droneXCooldownMax;
+        }
+    }
+    
+    void YAbility()
+    {
+        if (yCooldown <= 0)
+        {
+            if (pS.isPlayer1)
+            {
+                if (Input.GetButton("Y Controller 1"))
+                {
+                    //castShield = Instantiate(droneX, new Vector3(transform.position.x + 0.5f, transform.position.y,0), Quaternion.identity);
+                    //castShield.layer = 6;
+                    yCooldown = yCooldownMax;
+                }
+            }
+            else
+            {
+                if (Input.GetButton("Y Controller 2"))
+                {
+                    //castShield = Instantiate(droneX, new Vector3(transform.position.x - 0.5f, transform.position.y,0), Quaternion.identity);
+                    //castShield.layer = 7;
+                    yCooldown = yCooldownMax;
+                }
+            }
+        }
+        else
+        {
+            yCDImage.fillAmount = (float) yCooldown / yCooldownMax;
+        }
+    }
+    
+    void BAbility()
+    {
+        if (bCooldown <= 0)
+        {
+            if (pS.isPlayer1)
+            {
+                if (Input.GetButton("B Controller 1"))
+                {
+                    //castShield = Instantiate(droneX, new Vector3(transform.position.x + 0.5f, transform.position.y,0), Quaternion.identity);
+                    //castShield.layer = 6;
+                    bCooldown = bCooldownMax;
+                }
+            }
+            else
+            {
+                if (Input.GetButton("B Controller 2"))
+                {
+                    //castShield = Instantiate(droneX, new Vector3(transform.position.x - 0.5f, transform.position.y,0), Quaternion.identity);
+                    //castShield.layer = 7;
+                    bCooldown = bCooldownMax;
+                }
+            }
+        }
+        else
+        {
+            bXCDImage.fillAmount = (float) bCooldown / bCooldownMax;
         }
     }
 }
