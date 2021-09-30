@@ -36,7 +36,7 @@ public class BulletPool : MonoBehaviour
 
             for (int i = 0; i < pool.size; i++)
             {
-                GameObject obj = Instantiate(pool.prefab);
+                GameObject obj = Instantiate(pool.prefab,transform);
                 obj.SetActive(false);
                 objectPool.Enqueue(obj);
                 
@@ -58,6 +58,10 @@ public class BulletPool : MonoBehaviour
         GameObject objectToSpawn = poolDictionary[tag].Dequeue();
         
         objectToSpawn.SetActive(true);
+        if (objectToSpawn.GetComponent<GlobalHp>())
+        {
+            objectToSpawn.GetComponent<GlobalHp>().SecondStart();
+        }
         objectToSpawn.transform.position = positon;
         objectToSpawn.transform.rotation = rotation;
         

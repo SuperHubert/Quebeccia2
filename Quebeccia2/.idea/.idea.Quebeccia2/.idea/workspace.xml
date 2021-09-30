@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bf5fe4d3-9f2c-4e5e-8dca-cd234274fcc6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Quebeccia2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Quebeccia2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/HubertScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/HubertScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PowerCast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PowerCast.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScoreManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScoreManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WaveManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Shield.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Shield.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BulletPool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DebugController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DebugController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GlobalHp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GlobalHp.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +82,7 @@
       <workItem from="1632903660714" duration="7121000" />
       <workItem from="1632921589187" duration="4277000" />
       <workItem from="1632990180936" duration="3751000" />
-      <workItem from="1633038407909" duration="4365000" />
+      <workItem from="1633038407909" duration="5382000" />
     </task>
     <servers />
   </component>
