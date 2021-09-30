@@ -330,7 +330,7 @@ GameObject:
   - component: {fileID: 506551484}
   - component: {fileID: 506551483}
   m_Layer: 0
-  m_Name: Bullet Pooler
+  m_Name: Object Pooler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -352,6 +352,12 @@ MonoBehaviour:
   - tag: Player Bullets
     prefab: {fileID: 6338152922712872122, guid: 00f6b6b3c2185214ca2c8bf0dbdb3f32, type: 3}
     size: 300
+  - tag: Shields P1
+    prefab: {fileID: 7194668063039046806, guid: e80b042c033226a44ad39a515f3515fe, type: 3}
+    size: 3
+  - tag: Shields P2
+    prefab: {fileID: 7194668063039046806, guid: e80b042c033226a44ad39a515f3515fe, type: 3}
+    size: 3
 --- !u!4 &506551484
 Transform:
   m_ObjectHideFlags: 0

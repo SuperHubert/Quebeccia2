@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class PowerCast : MonoBehaviour
 {
     public PlayerShoot pS;
-    public GameObject shield;
     public GameObject droneX;
     private GameObject castShield;
     private GameObject castDroneX;
@@ -68,7 +67,7 @@ public class PowerCast : MonoBehaviour
             {
                 if (Input.GetButton("A Controller 1"))
                 {
-                    castShield = Instantiate(shield, new Vector3(transform.position.x + 2.5f, transform.position.y,0), Quaternion.identity);
+                    castShield = BulletPool.Instance.SpawnFromPool("Shields P1", new Vector3(transform.position.x + 2.5f, transform.position.y,0), Quaternion.identity);
                     castShield.layer = 6;
                     shieldCooldown = shieldCooldownMax;
                 }
@@ -77,7 +76,7 @@ public class PowerCast : MonoBehaviour
             {
                 if (Input.GetButton("A Controller 2"))
                 {
-                    castShield = Instantiate(shield, new Vector3(transform.position.x - 2.5f, transform.position.y,0), Quaternion.identity);
+                    castShield = BulletPool.Instance.SpawnFromPool("Shields P2", new Vector3(transform.position.x - 2.5f, transform.position.y,0), Quaternion.identity);
                     castShield.layer = 7;
                     shieldCooldown = shieldCooldownMax;
                 }
