@@ -107,6 +107,7 @@ public class PowerCast : MonoBehaviour
                 {
                     castDroneX = Instantiate(droneX, new Vector3(transform.position.x - 0.5f, transform.position.y,0), Quaternion.identity);
                     castDroneX.layer = 7;
+                    castShield.transform.Rotate(0,0,-180);
                     droneXCooldown = droneXCooldownMax;
                 }
             }
