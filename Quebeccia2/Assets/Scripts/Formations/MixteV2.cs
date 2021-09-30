@@ -10,6 +10,7 @@ public class MixteV2 : MonoBehaviour
     
     void Start()
     {
+        mainParent = this.gameObject;
         mainParent.transform.position = Vector3.up * 10;
     }
     
@@ -21,9 +22,23 @@ public class MixteV2 : MonoBehaviour
             mainParent.transform.position = Vector3.MoveTowards(mainParent.transform.position, Vector3.zero, step);
         }
 
-        if (mainParent.transform.position = Vector3.zero)
+        if (mainParent.transform.position == Vector3.zero)
         {
-            
+            phase++;
+            foreach (Transform branch in mainParent.transform)
+            {
+                foreach (Transform enemy in branch)
+                {
+                    if (enemy.GetComponent<MoveForward>())
+                    {
+                        enemy.GetComponent<MoveForward>().canMove = true;
+                    }
+                    else if (enemy.GetComponent<BackAndForth>())
+                    {
+                        enemy.GetComponent<BackAndForth>().canMove = true;
+                    }
+                }
+            }
         }
     }
 }

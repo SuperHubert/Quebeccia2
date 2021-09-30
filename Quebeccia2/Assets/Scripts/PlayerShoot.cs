@@ -5,6 +5,7 @@ public class PlayerShoot : MonoBehaviour
 {
     public GameObject bulletPrefab;
     [SerializeField] private int cooldown = 4;
+    public int coolDownMax = 50;
     public bool isPlayer1;
 
     [SerializeField] float bulletSpeed = 10f;
@@ -62,6 +63,6 @@ public class PlayerShoot : MonoBehaviour
             bullet.layer = 9;
         }
         
-        cooldown = 4;
+        cooldown = coolDownMax;
     }
 }

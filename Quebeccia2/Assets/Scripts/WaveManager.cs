@@ -6,8 +6,8 @@ public class WaveManager : MonoBehaviour
 {
     public int currentWave;
     public bool canSpawnWave;
-    
-    
+
+    public List<GameObject> listOfFormations = new List<GameObject>();
     public List<GameObject> listOfOpponents = new List<GameObject>();
     
     #region Singleton
@@ -29,7 +29,7 @@ public class WaveManager : MonoBehaviour
     {
         if (AreEnemiesDead())
         {
-            //spawn wave
+            Instantiate(listOfFormations[0]);
             AddEnemiesToList();
         }
     }

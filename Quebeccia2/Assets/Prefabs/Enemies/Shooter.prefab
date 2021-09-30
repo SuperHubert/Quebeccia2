@@ -11,11 +11,12 @@ GameObject:
   - component: {fileID: 3306894743868258493}
   - component: {fileID: 7479083957668926861}
   - component: {fileID: 4638209522526873626}
-  - component: {fileID: 4008547760058929719}
-  - component: {fileID: 2754025809233556356}
+  - component: {fileID: 7247867059064098720}
+  - component: {fileID: 6760825861121690838}
+  - component: {fileID: 2876788831212653746}
   m_Layer: 0
-  m_Name: Sphere (1)
-  m_TagString: Untagged
+  m_Name: Shooter
+  m_TagString: E
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,32 +84,53 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &4008547760058929719
-SphereCollider:
+--- !u!58 &7247867059064098720
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3917167810544995794}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!111 &2754025809233556356
-Animation:
+--- !u!114 &6760825861121690838
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3917167810544995794}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: c77505af7c23f0f4a95c63092eba4d49, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: c77505af7c23f0f4a95c63092eba4d49, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 471f00921c21ce24bb7b4548b992e80b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootCount: 0
+  canShoot: 1
+  maxHp: 3
+  currentHp: 0
+  scoreIncrease: 15
+--- !u!114 &2876788831212653746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3917167810544995794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efa1876372329264d82bda7669a0aeee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.1
+  listOfPositions: []
+  phase: 0
+  targetPos: {x: 0, y: 0, z: 0}
+  canMove: 0
