@@ -121,7 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainParent: {fileID: 0}
   mainSpeed: 5
-  phase: 0
+  timeSpent: 0
 --- !u!1001 &657737290058188252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -148,6 +148,10 @@ PrefabInstance:
     - target: {fileID: 1805349337474406022, guid: fd9f867532f11f34384445917bdee453, type: 3}
       propertyPath: playOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805349337474406022, guid: fd9f867532f11f34384445917bdee453, type: 3}
+      propertyPath: timeUntilActive
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3836688141777317697, guid: fd9f867532f11f34384445917bdee453, type: 3}
       propertyPath: m_RootOrder
@@ -402,6 +406,10 @@ PrefabInstance:
     - target: {fileID: 1805349337474406022, guid: fd9f867532f11f34384445917bdee453, type: 3}
       propertyPath: playOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805349337474406022, guid: fd9f867532f11f34384445917bdee453, type: 3}
+      propertyPath: timeUntilActive
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3836688141777317697, guid: fd9f867532f11f34384445917bdee453, type: 3}
       propertyPath: m_RootOrder
@@ -660,6 +668,10 @@ PrefabInstance:
     - target: {fileID: 1805349337474406022, guid: fd9f867532f11f34384445917bdee453, type: 3}
       propertyPath: playOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805349337474406022, guid: fd9f867532f11f34384445917bdee453, type: 3}
+      propertyPath: timeUntilActive
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3836688141777317697, guid: fd9f867532f11f34384445917bdee453, type: 3}
       propertyPath: m_RootOrder
@@ -1074,6 +1086,10 @@ PrefabInstance:
     - target: {fileID: 1805349337474406022, guid: fd9f867532f11f34384445917bdee453, type: 3}
       propertyPath: playOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805349337474406022, guid: fd9f867532f11f34384445917bdee453, type: 3}
+      propertyPath: timeUntilActive
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3836688141777317697, guid: fd9f867532f11f34384445917bdee453, type: 3}
       propertyPath: m_RootOrder
