@@ -11,6 +11,7 @@ public class MoveForward : MonoBehaviour
     public bool targetPlayerPos = false;
     public bool targetPlayer1 = false;
     public Vector3 target;
+    private Transform targetTransform;
     private bool canLook = true;
     public bool canMove = false;
 
@@ -21,11 +22,11 @@ public class MoveForward : MonoBehaviour
         {
             if (targetPlayer1)
             {
-                target = ScoreManager.Instance.gameObject.GetComponent<PlayerController>().player1Object.position;
+                targetTransform = ScoreManager.Instance.gameObject.GetComponent<PlayerController>().player1Object;
             }
             else
             {
-                target = ScoreManager.Instance.gameObject.GetComponent<PlayerController>().player2Object.position;
+                targetTransform = ScoreManager.Instance.gameObject.GetComponent<PlayerController>().player2Object;
             }
         }
     }
@@ -34,7 +35,14 @@ public class MoveForward : MonoBehaviour
     {
         if (canLook && asTarget)
         {
-            transform.LookAt(target,Vector3.forward);
+            if (targetPlayerPos)
+            {
+                transform.LookAt(targetTransform,Vector3.forward);
+            }
+            else
+            {
+                transform.LookAt(target,Vector3.forward);
+            }
         }
 
         if (canMove)

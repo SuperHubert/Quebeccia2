@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         currentHp = maxHp;
-        StartCoroutine(StartMoving(timeUntilActive+1));
+        StartCoroutine(StartMoving(timeUntilActive+2.1f));
 
     }
     
