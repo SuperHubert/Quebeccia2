@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class PowerCast : MonoBehaviour
 {
+    private int yoink;
     public PlayerShoot pS;
     public GameObject droneX;
     private GameObject castShield;
