@@ -25,6 +25,7 @@ public class WaveManager : MonoBehaviour
     void Start()
     {
         currentWave = 0;
+        DontDestroyOnLoad(this.gameObject);
     }
     
     void Update()

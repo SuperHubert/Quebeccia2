@@ -26,6 +26,7 @@ public class ScoreManager : MonoBehaviour
     }
     #endregion
     
+    
     public void AddScore(int player, int score)
     {
         if (player == 1)
