@@ -8,6 +8,7 @@ public class Laser : MonoBehaviour
     public bool expand;
     public float targetScale = 0.8f;
     public bool attackTime;
+    public int laserDamage;
     public Material laserShooting;
 
     private void Start()
@@ -45,15 +46,15 @@ public class Laser : MonoBehaviour
             GetComponent<MeshRenderer>().material = laserShooting;
             if (playerHp != null)
             {
-                playerHp.TakeDamage(5);
+                playerHp.TakeDamage(laserDamage);
             }
             else if (enemy != null)
             {
-                enemy.TakeDamage(5, 0);
+                enemy.TakeDamage(laserDamage, 0);
             }
             else if (otherHp != null)
             {
-                otherHp.TakeDamage(5);
+                otherHp.TakeDamage(laserDamage);
             }
             
             attackTime = false;

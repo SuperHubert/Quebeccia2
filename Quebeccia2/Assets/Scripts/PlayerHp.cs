@@ -1,12 +1,11 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHp : MonoBehaviour
 {
-    public int startingHp = 6;
+    public int startingHp = 600;
     public int currentHp;
     public bool canTakeDamage = true;
     public float invulFrames = 1;
@@ -25,14 +24,14 @@ public class PlayerHp : MonoBehaviour
         if (canTakeDamage)
         {
             currentHp -= damage;
-            if (damage > 0)
+            /*if (damage > 0)
             {
                 StartCoroutine(InvulnerabilityFrames());
-            }
+            }*/
             if (currentHp <= 0)
             {
                 currentHp = 0;
-                Debug.Log("Game Over"); 
+                SceneManager.LoadScene(3); 
             }
             lifeBar.fillAmount = (float)currentHp / startingHp;
         }
