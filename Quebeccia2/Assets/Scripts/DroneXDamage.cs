@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class DroneXDamage : MonoBehaviour
 {
-    public int playerDamage = 0;
-    public int shieldDamage = 999999;
+    public int playerDamage = 10;
+    public int shieldDamage = 50;
     
     private void OnTriggerEnter2D(Collider2D other)
     {

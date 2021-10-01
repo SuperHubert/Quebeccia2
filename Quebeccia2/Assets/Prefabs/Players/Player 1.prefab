@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f585527b25db96141998922c08b19307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHp: 6
+  startingHp: 100
   currentHp: 6
   canTakeDamage: 1
   invulFrames: 1
@@ -182,7 +182,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pS: {fileID: 5391833174623229351}
-  droneX: {fileID: 5074299450293674439, guid: 146c9d698afbdf144ab101cedcb42c3d, type: 3}
   objectY: {fileID: 2444478408541823714, guid: c9c920dc7d3400a4589947267d6be73d, type: 3}
   objectB: {fileID: 3089437986387879412, guid: d55ed0d4f2e9d6a45b0f78c07b5f1763, type: 3}
   costA: 1
