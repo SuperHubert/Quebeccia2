@@ -70,6 +70,7 @@ public class Enemy : MonoBehaviour
         if (gameObject.GetComponent<Shooter>())
         {
             gameObject.GetComponent<Shooter>().canShoot = true;
+            gameObject.transform.parent = null;
         }
     }
 }

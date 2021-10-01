@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 471f00921c21ce24bb7b4548b992e80b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 3
+  maxHp: 2
   currentHp: 0
   scoreIncrease: 15
   ressourceIncrease: 1
@@ -168,4 +168,5 @@ MonoBehaviour:
   targetPlayerPos: 0
   targetPlayer1: 0
   target: {x: 0, y: 0, z: 0}
+  canLook: 1
   canMove: 0

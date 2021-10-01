@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 5456320884350811916}
   m_Layer: 11
   m_Name: Shooter
-  m_TagString: E
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 471f00921c21ce24bb7b4548b992e80b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 3
+  maxHp: 2
   currentHp: 0
   scoreIncrease: 15
   ressourceIncrease: 1
