@@ -21,17 +21,17 @@ public class VictoryManager : MonoBehaviour
     {
        if (ScoreToNextScene.Instance.scoreP1 == ScoreToNextScene.Instance.scoreP2)
         {
-            playerText.text = "Aucun";
+         
             scoreText.text = "Score : " + ScoreToNextScene.Instance.scoreP1;
         }
        else if (ScoreToNextScene.Instance.scoreP1 > ScoreToNextScene.Instance.scoreP2)
        {
-            playerText.text = "Joueur 1";
+            
             scoreText.text = "Score : " + ScoreToNextScene.Instance.scoreP1;
         }
        else
         {
-            playerText.text = "Joueur 2";
+          
             scoreText.text = "Score : " + ScoreToNextScene.Instance.scoreP2;
         }
 
@@ -41,6 +41,10 @@ public class VictoryManager : MonoBehaviour
             newHighScore.text = "New !";
         }
 
+        playerText.text = ScoreToNextScene.Instance.GetWinner();
+
     }
+
+
 
 }
