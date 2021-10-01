@@ -8,7 +8,6 @@ public class PowerCast : MonoBehaviour
 {
     public PlayerShoot pS;
     
-    public GameObject droneX;
     public GameObject objectY;
     public GameObject objectB;
     
@@ -112,7 +111,7 @@ public class PowerCast : MonoBehaviour
                 if (Input.GetButton("X Controller 1") && ScoreManager.Instance.HasRessources(1,costX))
                 {
                     castDroneX = BulletPool.Instance.SpawnFromPool("DroneX P1",
-                        new Vector3(transform.position.x + 2.5f, transform.position.y, 0), Quaternion.identity);
+                        new Vector3(transform.position.x + 0.5f, transform.position.y, 0), Quaternion.identity);
                     castDroneX.layer = 6;
                     castDroneX.transform.GetChild(0).gameObject.layer = 6;
                     droneXCooldown = droneXCooldownMax;
@@ -124,7 +123,7 @@ public class PowerCast : MonoBehaviour
                 if (Input.GetButton("X Controller 2") && ScoreManager.Instance.HasRessources(2,costX))
                 {
                     castDroneX = BulletPool.Instance.SpawnFromPool("DroneX P2",
-                        new Vector3(transform.position.x - 2.5f, transform.position.y, 0), Quaternion.identity);
+                        new Vector3(transform.position.x - 0.5f, transform.position.y, 0), Quaternion.identity);
                     castDroneX.layer = 7;
                     castDroneX.transform.GetChild(0).gameObject.layer = 7;
                     castDroneX.transform.Rotate(0, 0, -180);
@@ -147,7 +146,9 @@ public class PowerCast : MonoBehaviour
             {
                 if (Input.GetButton("Y Controller 1") && ScoreManager.Instance.HasRessources(1,costY))
                 {
-                    //castY = Instantiate(objectY, new Vector3(transform.position.x + 0.5f, transform.position.y,0), Quaternion.identity);
+                    castY = Instantiate(objectY, new Vector3(transform.position.x + 1f, -transform.position.y,0), Quaternion.identity);
+                    castY.GetComponent<playerClone>().player = gameObject;
+                    castY.SetActive(true);
                     castY.layer = 6;
                     yCooldown = yCooldownMax;
                     ScoreManager.Instance.AddRessources(1,-costY);
@@ -157,7 +158,9 @@ public class PowerCast : MonoBehaviour
             {
                 if (Input.GetButton("Y Controller 2") && ScoreManager.Instance.HasRessources(2,costY))
                 {
-                    //castY = Instantiate(objectY, new Vector3(transform.position.x - 0.5f, transform.position.y,0), Quaternion.identity);
+                    castY = Instantiate(objectY, new Vector3(transform.position.x - 1f, -transform.position.y,0), Quaternion.identity);
+                    castY.GetComponent<playerClone>().player = gameObject;
+                    castY.SetActive(true);
                     castY.layer = 7;
                     yCooldown = yCooldownMax;
                     ScoreManager.Instance.AddRessources(2,-costY);
@@ -178,8 +181,10 @@ public class PowerCast : MonoBehaviour
             {
                 if (Input.GetButton("B Controller 1") && ScoreManager.Instance.HasRessources(1,costB))
                 {
-                    //castB = Instantiate(objectB, new Vector3(transform.position.x + 0.5f, transform.position.y,0), Quaternion.identity);
-                    //castB.layer = 6;
+                    castB = Instantiate(objectB, new Vector3(transform.position.x + 10.25f, transform.position.y,0), Quaternion.identity);
+                    castB.GetComponent<Laser>().player = gameObject;
+                    castB.SetActive(true);
+                    castB.layer = 6;
                     bCooldown = bCooldownMax;
                     ScoreManager.Instance.AddRessources(1,-costB);
                 }
@@ -188,8 +193,10 @@ public class PowerCast : MonoBehaviour
             {
                 if (Input.GetButton("B Controller 2") && ScoreManager.Instance.HasRessources(2,costB))
                 {
-                    //castB = Instantiate(objectB, new Vector3(transform.position.x - 0.5f, transform.position.y,0), Quaternion.identity);
-                    //castB.layer = 7;
+                    castB = Instantiate(objectB, new Vector3(transform.position.x - 10.25f, transform.position.y,0), Quaternion.identity);
+                    castB.GetComponent<Laser>().player = gameObject;
+                    castB.SetActive(true);
+                    castB.layer = 7;
                     bCooldown = bCooldownMax;
                     ScoreManager.Instance.AddRessources(2,-costB);
                 }

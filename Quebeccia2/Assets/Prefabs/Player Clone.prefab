@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 2444478408541823713}
   - component: {fileID: 2444478408541823716}
   - component: {fileID: 2444478408541823717}
-  - component: {fileID: 2444478408541823722}
   - component: {fileID: 3367523124373898617}
   - component: {fileID: 2444478408541823715}
   - component: {fileID: 2444478408541823740}
@@ -149,34 +148,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 6338152922712872122, guid: 00f6b6b3c2185214ca2c8bf0dbdb3f32, type: 3}
   cooldown: 50
+  coolDownMax: 50
   isPlayer1: 1
   bulletSpeed: 10
---- !u!114 &2444478408541823722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2444478408541823714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7ea838b95d3f6e4e81415f4ec68e31f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pS: {fileID: 2444478408541823717}
-  droneX: {fileID: 5074299450293674439, guid: 146c9d698afbdf144ab101cedcb42c3d, type: 3}
-  shieldCooldown: 0
-  shieldCooldownMax: 300
-  droneXCooldown: 0
-  droneXCooldownMax: 300
-  yCooldown: 0
-  yCooldownMax: 300
-  bCooldown: 0
-  bCooldownMax: 300
-  shieldCDImage: {fileID: 0}
-  droneXCDImage: {fileID: 0}
-  yCDImage: {fileID: 0}
-  bXCDImage: {fileID: 0}
 --- !u!95 &3367523124373898617
 Animator:
   serializedVersion: 3
