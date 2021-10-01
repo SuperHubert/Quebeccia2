@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7194668063039046804}
   - component: {fileID: 7194668063039046805}
   - component: {fileID: 4180451759479990547}
+  - component: {fileID: -6476249845549070127}
   m_Layer: 6
   m_Name: Shield
   m_TagString: Untagged
@@ -125,3 +126,15 @@ MonoBehaviour:
   currentHp: 0
   decay: 1
   decaySpeed: 0.1
+--- !u!114 &-6476249845549070127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7194668063039046806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc8e349532abe5439e2024a0a9090df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

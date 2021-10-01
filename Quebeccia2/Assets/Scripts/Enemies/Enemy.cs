@@ -25,8 +25,12 @@ public class Enemy : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         PlayerHp playerHp = other.gameObject.GetComponent<PlayerHp>();
-        
-        Debug.Log(playerHp);
+
+        if (other.gameObject.GetComponent<WallHp>())
+        {
+            WaveManager.Instance.KilledOpponent(gameObject);
+            Destroy(gameObject); 
+        }
         
         if (playerHp != null)
         {
@@ -34,6 +38,8 @@ public class Enemy : MonoBehaviour
             WaveManager.Instance.KilledOpponent(gameObject);
             Destroy(gameObject);
         }
+        
+        
         
     }
     
