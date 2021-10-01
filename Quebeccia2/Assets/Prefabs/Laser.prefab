@@ -165,4 +165,5 @@ MonoBehaviour:
   expand: 0
   targetScale: 0.8
   attackTime: 1
+  laserDamage: 20
   laserShooting: {fileID: 2100000, guid: a08a0f7214a67c843a451695dd7d5156, type: 2}

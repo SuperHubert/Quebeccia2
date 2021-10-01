@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212a4d12c7fa5e34293a6964f8d6cc27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHp: 50
-  currentHp: 50
+  startingHp: 15
+  currentHp: 15
   decay: 1
   decaySpeed: 0.1
