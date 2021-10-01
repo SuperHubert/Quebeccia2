@@ -7,7 +7,7 @@ public class Shooter : MonoBehaviour
     [SerializeField] private int cooldown = 4;
     public int coolDownMax = 50;
 
-    public bool canShoot;
+    public bool canShoot = false;
     
     [SerializeField] float bulletSpeed = 10f;
     private BulletPool bulletPool;

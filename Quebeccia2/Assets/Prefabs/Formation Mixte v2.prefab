@@ -125,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainParent: {fileID: 0}
   mainSpeed: 5
-  timeSpent: 0
+  startedMoving: 0
 --- !u!1001 &657737290058188252
 PrefabInstance:
   m_ObjectHideFlags: 0

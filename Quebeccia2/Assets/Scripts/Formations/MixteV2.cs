@@ -6,7 +6,7 @@ public class MixteV2 : MonoBehaviour
 {
     public GameObject mainParent;
     public float mainSpeed = 1;
-    public float timeSpent = 0;
+    public bool startedMoving = false;
 
     void Start()
     {
@@ -16,10 +16,26 @@ public class MixteV2 : MonoBehaviour
     
     void Update()
     {
-        if (mainParent.transform.position != Vector3.zero)
+        if (mainParent.transform.position != Vector3.zero && !startedMoving)
         {
             float step =  mainSpeed * Time.deltaTime;
             mainParent.transform.position = Vector3.MoveTowards(mainParent.transform.position, Vector3.zero, step);
+        }
+        else if (mainParent.transform.position == Vector3.zero && !startedMoving)
+        {
+            startedMoving = true;
+            ActivateUnits();
+        }
+    }
+
+    void ActivateUnits()
+    {
+        foreach (Transform side in transform)
+        {
+            foreach (Transform child in side)
+            {
+                child.GetComponent<Enemy>().Activate();
+            }
         }
     }
 }
