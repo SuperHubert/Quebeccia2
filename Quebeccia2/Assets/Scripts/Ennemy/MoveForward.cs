@@ -12,12 +12,12 @@ public class MoveForward : MonoBehaviour
     public bool targetPlayer1 = false;
     public Vector3 target;
     private Transform targetTransform;
-    private bool canLook = true;
+    [SerializeField]private bool canLook = true;
     public bool canMove = false;
 
     private void Start()
     {
-        StartCoroutine(AutoKill());
+        //StartCoroutine(AutoKill());
         if (targetPlayerPos)
         {
             if (targetPlayer1)
@@ -37,11 +37,13 @@ public class MoveForward : MonoBehaviour
         {
             if (targetPlayerPos)
             {
-                transform.LookAt(targetTransform,Vector3.forward);
+                transform.LookAt(targetTransform);
+                transform.Rotate(0,-90,0);
             }
             else
             {
-                transform.LookAt(target,Vector3.forward);
+                transform.LookAt(target);
+                transform.Rotate(0,-90,0);
             }
         }
 
@@ -53,7 +55,7 @@ public class MoveForward : MonoBehaviour
 
             if (asTarget)
             {
-                transform.position += transform.forward * step;
+                transform.position += transform.right * step;
             }
             else if (p1target)
             {
@@ -65,9 +67,7 @@ public class MoveForward : MonoBehaviour
                 transform.position =
                     Vector3.MoveTowards(transform.position, transform.position + Vector3.left * -10, step);
             }
-
         }
-
     }
 
     IEnumerator AutoKill()
