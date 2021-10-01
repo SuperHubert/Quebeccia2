@@ -21,8 +21,10 @@ public class Enemy : MonoBehaviour
         currentHp = maxHp;
     }
     
+    
     private void OnCollisionEnter2D(Collision2D other)
     {
+        /*
         PlayerHp playerHp = other.gameObject.GetComponent<PlayerHp>();
 
         if (playerHp != null)
@@ -31,9 +33,25 @@ public class Enemy : MonoBehaviour
             WaveManager.Instance.KilledOpponent(gameObject);
             Destroy(gameObject);
         }
-        
+        */
     }
     
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        /*
+        PlayerHp playerHp = other.gameObject.GetComponent<PlayerHp>();
+
+        if (playerHp != null)
+        {
+            playerHp.TakeDamage(1);
+            WaveManager.Instance.KilledOpponent(gameObject);
+            Destroy(gameObject);
+        }
+        */
+    }
+
+
     public void TakeDamage(int damage,int player)
     {
         currentHp -= damage;

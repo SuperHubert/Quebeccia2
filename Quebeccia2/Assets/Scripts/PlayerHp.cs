@@ -31,6 +31,7 @@ public class PlayerHp : MonoBehaviour
             if (currentHp <= 0)
             {
                 currentHp = 0;
+                ScoreToNextScene.Instance.UpdateScore();
                 SceneManager.LoadScene(3); 
             }
             lifeBar.fillAmount = (float)currentHp / startingHp;
