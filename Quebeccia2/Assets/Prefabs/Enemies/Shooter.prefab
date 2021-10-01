@@ -117,6 +117,7 @@ MonoBehaviour:
   maxHp: 3
   currentHp: 0
   scoreIncrease: 15
+  ressourceIncrease: 1
   timeUntilActive: 1
   active: 0
 --- !u!114 &2876788831212653746
@@ -150,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldown: 4
   coolDownMax: 250
-  canShoot: 1
+  canShoot: 0
   bulletSpeed: 1
   lookAtPlayer: 0
   fixedRotation: 0
