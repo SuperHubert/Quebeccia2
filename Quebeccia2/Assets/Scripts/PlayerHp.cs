@@ -25,7 +25,10 @@ public class PlayerHp : MonoBehaviour
         if (canTakeDamage)
         {
             currentHp -= damage;
-            StartCoroutine(InvulnerabilityFrames());
+            if (damage > 0)
+            {
+                StartCoroutine(InvulnerabilityFrames());
+            }
             if (currentHp <= 0)
             {
                 currentHp = 0;

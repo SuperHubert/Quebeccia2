@@ -114,6 +114,7 @@ public class PowerCast : MonoBehaviour
                     castDroneX = BulletPool.Instance.SpawnFromPool("DroneX P1",
                         new Vector3(transform.position.x + 2.5f, transform.position.y, 0), Quaternion.identity);
                     castDroneX.layer = 6;
+                    castDroneX.transform.GetChild(0).gameObject.layer = 6;
                     droneXCooldown = droneXCooldownMax;
                     ScoreManager.Instance.AddRessources(1,-costX);
                 }
@@ -123,8 +124,9 @@ public class PowerCast : MonoBehaviour
                 if (Input.GetButton("X Controller 2") && ScoreManager.Instance.HasRessources(2,costX))
                 {
                     castDroneX = BulletPool.Instance.SpawnFromPool("DroneX P2",
-                        new Vector3(transform.position.x + 2.5f, transform.position.y, 0), Quaternion.identity);
+                        new Vector3(transform.position.x - 2.5f, transform.position.y, 0), Quaternion.identity);
                     castDroneX.layer = 7;
+                    castDroneX.transform.GetChild(0).gameObject.layer = 7;
                     castDroneX.transform.Rotate(0, 0, -180);
                     droneXCooldown = droneXCooldownMax;
                     ScoreManager.Instance.AddRessources(2,-costX);
