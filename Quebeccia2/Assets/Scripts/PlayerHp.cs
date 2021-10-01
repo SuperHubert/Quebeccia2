@@ -33,7 +33,10 @@ public class PlayerHp : MonoBehaviour
             if (currentHp <= 0)
             {
                 currentHp = 0;
+                ScoreManager.Instance.gameObject.GetComponent<PlayerController>().enabled = false;
+                ScoreManager.Instance.gameObject.gameObject.GetComponent<WaveManager>().enabled = false;
                 SceneManager.LoadScene(3);
+                
             }
             lifeBar.fillAmount = (float)currentHp / startingHp;
         }
