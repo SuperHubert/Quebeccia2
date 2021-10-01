@@ -17,7 +17,7 @@ public class MoveForward : MonoBehaviour
 
     private void Start()
     {
-        //StartCoroutine(AutoKill());
+        StartCoroutine(AutoKill());
         if (targetPlayerPos)
         {
             if (targetPlayer1)
