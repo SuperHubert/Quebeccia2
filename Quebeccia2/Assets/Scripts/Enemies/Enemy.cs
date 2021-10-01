@@ -19,8 +19,6 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         currentHp = maxHp;
-        StartCoroutine(StartMoving(timeUntilActive+2.1f));
-
     }
     
     private void OnCollisionEnter2D(Collision2D other)
@@ -51,7 +49,7 @@ public class Enemy : MonoBehaviour
 
     public void Activate()
     {
-        active = true;
+        StartCoroutine(StartMoving(timeUntilActive));
     }
     
     IEnumerator StartMoving(float waitTime)

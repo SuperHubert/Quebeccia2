@@ -148,7 +148,7 @@ public class PowerCast : MonoBehaviour
                 if (Input.GetButton("Y Controller 1") && ScoreManager.Instance.HasRessources(1,costY))
                 {
                     //castY = Instantiate(objectY, new Vector3(transform.position.x + 0.5f, transform.position.y,0), Quaternion.identity);
-                    //castY.layer = 6;
+                    castY.layer = 6;
                     yCooldown = yCooldownMax;
                     ScoreManager.Instance.AddRessources(1,-costY);
                 }
@@ -158,7 +158,7 @@ public class PowerCast : MonoBehaviour
                 if (Input.GetButton("Y Controller 2") && ScoreManager.Instance.HasRessources(2,costY))
                 {
                     //castY = Instantiate(objectY, new Vector3(transform.position.x - 0.5f, transform.position.y,0), Quaternion.identity);
-                    //castY.layer = 7;
+                    castY.layer = 7;
                     yCooldown = yCooldownMax;
                     ScoreManager.Instance.AddRessources(2,-costY);
                 }
