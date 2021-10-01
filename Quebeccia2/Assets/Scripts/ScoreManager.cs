@@ -25,8 +25,13 @@ public class ScoreManager : MonoBehaviour
         Instance = this;
     }
     #endregion
-    
-    
+
+    private void Start()
+    {
+        UpdateUIP1();
+        UpdateUIP2();
+    }
+
     public void AddScore(int player, int score)
     {
         if (player == 1)

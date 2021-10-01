@@ -184,7 +184,7 @@ public class PowerCast : MonoBehaviour
                     castB = Instantiate(objectB, new Vector3(transform.position.x + 10.25f, transform.position.y,0), Quaternion.identity);
                     castB.GetComponent<Laser>().player = gameObject;
                     castB.SetActive(true);
-                    castB.layer = 6;
+                    castB.layer = 8;
                     bCooldown = bCooldownMax;
                     ScoreManager.Instance.AddRessources(1,-costB);
                 }
@@ -196,7 +196,7 @@ public class PowerCast : MonoBehaviour
                     castB = Instantiate(objectB, new Vector3(transform.position.x - 10.25f, transform.position.y,0), Quaternion.identity);
                     castB.GetComponent<Laser>().player = gameObject;
                     castB.SetActive(true);
-                    castB.layer = 7;
+                    castB.layer = 9;
                     bCooldown = bCooldownMax;
                     ScoreManager.Instance.AddRessources(2,-costB);
                 }

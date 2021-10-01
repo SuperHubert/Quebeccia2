@@ -1333,6 +1333,14 @@ PrefabInstance:
       value: DroneX P2
       objectReference: {fileID: 0}
     - target: {fileID: 4781229819423731686, guid: 1de55b1f3f2c38f49bd694b9327bbbac, type: 3}
+      propertyPath: pools.Array.data[6].tag
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781229819423731686, guid: 1de55b1f3f2c38f49bd694b9327bbbac, type: 3}
+      propertyPath: pools.Array.data[7].tag
+      value: Laser P2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781229819423731686, guid: 1de55b1f3f2c38f49bd694b9327bbbac, type: 3}
       propertyPath: pools.Array.data[0].size
       value: 150
       objectReference: {fileID: 0}
@@ -1349,6 +1357,14 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4781229819423731686, guid: 1de55b1f3f2c38f49bd694b9327bbbac, type: 3}
+      propertyPath: pools.Array.data[6].size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781229819423731686, guid: 1de55b1f3f2c38f49bd694b9327bbbac, type: 3}
+      propertyPath: pools.Array.data[7].size
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781229819423731686, guid: 1de55b1f3f2c38f49bd694b9327bbbac, type: 3}
       propertyPath: pools.Array.data[3].prefab
       value: 
       objectReference: {fileID: 6338152922712872122, guid: 00f6b6b3c2185214ca2c8bf0dbdb3f32, type: 3}
@@ -1360,6 +1376,10 @@ PrefabInstance:
       propertyPath: pools.Array.data[5].prefab
       value: 
       objectReference: {fileID: 5074299450293674439, guid: 146c9d698afbdf144ab101cedcb42c3d, type: 3}
+    - target: {fileID: 4781229819423731686, guid: 1de55b1f3f2c38f49bd694b9327bbbac, type: 3}
+      propertyPath: pools.Array.data[7].prefab
+      value: 
+      objectReference: {fileID: 6338152922712872122, guid: 00f6b6b3c2185214ca2c8bf0dbdb3f32, type: 3}
     - target: {fileID: 4781229819423731687, guid: 1de55b1f3f2c38f49bd694b9327bbbac, type: 3}
       propertyPath: m_Name
       value: Object Pooler
@@ -1504,7 +1524,11 @@ PrefabInstance:
       objectReference: {fileID: 1917271137}
     - target: {fileID: 4344330136109207353, guid: 31be34db94c56a443821f365a87a72e5, type: 3}
       propertyPath: droneXCooldownMax
-      value: 10
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344330136109207353, guid: 31be34db94c56a443821f365a87a72e5, type: 3}
+      propertyPath: shieldCooldownMax
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 4344330136109207354, guid: 31be34db94c56a443821f365a87a72e5, type: 3}
       propertyPath: anim
@@ -1648,6 +1672,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1927196294}
     - target: {fileID: 4480596859894785213, guid: 021662afc447f274780e96ca68456cb4, type: 3}
+      propertyPath: player1Ressources
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4480596859894785213, guid: 021662afc447f274780e96ca68456cb4, type: 3}
+      propertyPath: player2Ressources
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4480596859894785213, guid: 021662afc447f274780e96ca68456cb4, type: 3}
       propertyPath: player1RessourceText
       value: 
       objectReference: {fileID: 0}
@@ -1674,7 +1706,7 @@ PrefabInstance:
     - target: {fileID: 4480596859894785214, guid: 021662afc447f274780e96ca68456cb4, type: 3}
       propertyPath: listOfFormations.Array.data[0]
       value: 
-      objectReference: {fileID: 6135653763273515916, guid: 41f5edf6582904b43b2a5cf482d1c371, type: 3}
+      objectReference: {fileID: 2607717620596128026, guid: 358a68d1ca363664e98f9e3dd128a739, type: 3}
     - target: {fileID: 4480596859894785214, guid: 021662afc447f274780e96ca68456cb4, type: 3}
       propertyPath: listOfFormations.Array.data[1]
       value: 
@@ -1686,7 +1718,7 @@ PrefabInstance:
     - target: {fileID: 4480596859894785214, guid: 021662afc447f274780e96ca68456cb4, type: 3}
       propertyPath: listOfFormations.Array.data[3]
       value: 
-      objectReference: {fileID: 7063341672188006967, guid: a923bf3d2a3c20349b7455c899479ba8, type: 3}
+      objectReference: {fileID: 322926184935413920, guid: e6a1213fc4065c24dbc1857822365293, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 021662afc447f274780e96ca68456cb4, type: 3}
 --- !u!1001 &5391833175262006401
@@ -1794,7 +1826,11 @@ PrefabInstance:
       objectReference: {fileID: 894343571}
     - target: {fileID: 5391833174623229352, guid: 8b2115bb788911d4585e9a3f0609ac6f, type: 3}
       propertyPath: droneXCooldownMax
-      value: 10
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5391833174623229352, guid: 8b2115bb788911d4585e9a3f0609ac6f, type: 3}
+      propertyPath: shieldCooldownMax
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 5391833174623229353, guid: 8b2115bb788911d4585e9a3f0609ac6f, type: 3}
       propertyPath: anim

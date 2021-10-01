@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 4
-  coolDownMax: 500
+  coolDownMax: 1000
   canShoot: 0
   bulletSpeed: 1
   lookAtPlayer: 0

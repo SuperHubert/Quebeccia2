@@ -26,10 +26,8 @@ public class Laser : MonoBehaviour
         if (expand)
         {
             transform.localScale += new Vector3(0, 0.025f, 0);
-            Debug.Log("expand");
             if (transform.localScale.y >= targetScale)
             {
-                Debug.Log("targeted scale");
                 expand = false;
             }
         }
@@ -37,24 +35,21 @@ public class Laser : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        Enemy enemy = other.GetComponent<Enemy>();
-        PlayerHp playerHp = other.GetComponent<PlayerHp>();
-        GlobalHp otherHp = other.GetComponent<GlobalHp>();
-        
-        if (attackTime == true)
+        if (attackTime)
         {
             GetComponent<MeshRenderer>().material = laserShooting;
-            if (playerHp != null)
+            
+            if (other.GetComponent<Enemy>())
             {
-                playerHp.TakeDamage(laserDamage);
+                other.GetComponent<Enemy>().TakeDamage(laserDamage,player.layer-5);
             }
-            else if (enemy != null)
+            else if (other.GetComponent<PlayerHp>())
             {
-                enemy.TakeDamage(laserDamage, 0);
+                other.GetComponent<PlayerHp>().TakeDamage(laserDamage);
             }
-            else if (otherHp != null)
+            else if (other.GetComponent<GlobalHp>())
             {
-                otherHp.TakeDamage(laserDamage);
+                other.GetComponent<GlobalHp>().TakeDamage(laserDamage);
             }
             
             attackTime = false;
