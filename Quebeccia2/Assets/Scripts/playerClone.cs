@@ -6,6 +6,12 @@ using UnityEngine;
 public class playerClone : MonoBehaviour
 {
     public GameObject player;
+
+    private void Start()
+    {
+        GetComponent<PlayerShoot>().isPlayer1 = player.GetComponent<PlayerShoot>().isPlayer1;
+    }
+
     void FixedUpdate()
     {
         gameObject.layer = player.layer;
